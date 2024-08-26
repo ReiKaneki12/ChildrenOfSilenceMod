@@ -2979,6 +2979,20 @@
         ]
       },
       "path": "~/Enchantment/Blessed/Procedures"
+    },
+    {
+      "name": "HawkTuah",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hawk_tuah",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/HawkTuahProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/HawkTuah"
     }
   ],
   "variable_elements": [
@@ -3225,8 +3239,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "effect.children_of_silence.mana_sickness": "Mana Sickness",
+      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
@@ -3749,6 +3763,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "HawkTuah",
+        "children": []
       }
     ]
   },
