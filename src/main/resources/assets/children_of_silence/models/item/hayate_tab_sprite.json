@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "children_of_silence:item/hayate_criative_tab"
+  }
+}

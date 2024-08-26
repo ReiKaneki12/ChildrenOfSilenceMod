@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "RIGHT",
+    "keyBindingName": "Next Spell",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KeyRight"
+    }
+  }
+}

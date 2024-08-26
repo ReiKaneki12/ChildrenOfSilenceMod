@@ -1,0 +1,3779 @@
+{
+  "mod_elements": [
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SpellMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spell_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/SpellMenuMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "KeyM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_m",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "SpellSlotMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spell_slot_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/world/inventory/SpellSlotMenuMenu.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/gui/SpellSlotMenuScreen.java"
+        ]
+      },
+      "path": "~/Magic System/Menus"
+    },
+    {
+      "name": "Debug",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab"
+    },
+    {
+      "name": "SaveSpellSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_spell_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SaveSpellSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Menus"
+    },
+    {
+      "name": "TrueSightSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_sight_sprite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/TrueSightSpriteItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/true_sight_sprite.json"
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 1 - True Sight/Sprite"
+    },
+    {
+      "name": "Spells",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spells",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab"
+    },
+    {
+      "name": "CheckSpellsSlotDebug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_spells_slot_debug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/check_spells_slot_debug.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/CheckSpellsSlotDebugItem.java"
+        ]
+      },
+      "path": "~/Debug/Check Spells Slot"
+    },
+    {
+      "name": "CheckSpellsSlotDebugProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_spells_slot_debug_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CheckSpellsSlotDebugProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Debug/Check Spells Slot"
+    },
+    {
+      "name": "CloseSpellMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_spell_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CloseSpellMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Menus"
+    },
+    {
+      "name": "LoadSpellMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_spell_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/LoadSpellMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Menus"
+    },
+    {
+      "name": "UseSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_spell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/UseSpellProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "UseSpellKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_spell_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/UseSpellKeyMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "KeyZ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_z",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyZProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "NextSpell",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_spell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/NextSpellMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "PreviousSpell",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "previous_spell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/PreviousSpellMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "KeyRight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyRightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "KeyLeft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyLeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "SetSpellInSpellSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_spell_in_spell_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSpellInSpellSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "SetNameOfSpellInSpellSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_name_of_spell_in_spell_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetNameOfSpellInSpellSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "CocCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coc_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/command/CocCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "CheckManaDebug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_mana_debug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/check_mana_debug.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/CheckManaDebugItem.java"
+        ]
+      },
+      "path": "~/Debug/Check Mana"
+    },
+    {
+      "name": "CheckManaDebugProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_mana_debug_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CheckManaDebugProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Debug/Check Mana"
+    },
+    {
+      "name": "ReturnOverlayTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_overlay_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnOverlayTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays"
+    },
+    {
+      "name": "ManaOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/screens/ManaOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Magic System/Overlays"
+    },
+    {
+      "name": "ReturnManaValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_mana_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnManaValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays"
+    },
+    {
+      "name": "ManaManagement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_management",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ManaManagementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "UseTrueSight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_true_sight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/UseTrueSightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 1 - True Sight/Procedures"
+    },
+    {
+      "name": "ReturnColldownOverlayTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_colldown_overlay_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnColldownOverlayTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays"
+    },
+    {
+      "name": "ReturnColldownValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_colldown_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnColldownValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays"
+    },
+    {
+      "name": "TrueSightParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_sight_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/particle/TrueSightParticleParticle.java",
+          "src/main/resources/assets/children_of_silence/particles/true_sight_particle.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "TrueSightParticleAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_sight_particle_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/TrueSightParticleAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 1 - True Sight/Procedures"
+    },
+    {
+      "name": "SpawnParticleDebug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_particle_debug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/SpawnParticleDebugItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/spawn_particle_debug.json"
+        ]
+      },
+      "path": "~/Debug/SpawnParticle"
+    },
+    {
+      "name": "TrueSightAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_sight_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/TrueSightAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 1 - True Sight/Procedures"
+    },
+    {
+      "name": "ResetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_variables",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ResetVariablesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "HayateTabSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hayate_tab_sprite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/hayate_tab_sprite.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/HayateTabSpriteItem.java"
+        ]
+      },
+      "path": "~/Criative Tab/Hayate"
+    },
+    {
+      "name": "HayateTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hayate_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab/Hayate"
+    },
+    {
+      "name": "HayateKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hayate_katana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/hayate_katana.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/HayateKatanaItem.java"
+        ]
+      },
+      "path": "~/Hayate/Weapons"
+    },
+    {
+      "name": "HayateClaymore",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hayate_claymore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/hayate_claymore.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/HayateClaymoreItem.java"
+        ]
+      },
+      "path": "~/Hayate/Weapons"
+    },
+    {
+      "name": "SlayerTabSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_tab_sprite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/slayer_tab_sprite.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/SlayerTabSpriteItem.java"
+        ]
+      },
+      "path": "~/Criative Tab/Slayer"
+    },
+    {
+      "name": "SlayerTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab/Slayer"
+    },
+    {
+      "name": "SlayerDagger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slayer_dagger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/SlayerDaggerItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/slayer_dagger.json"
+        ]
+      },
+      "path": "~/Slayer/Weapons"
+    },
+    {
+      "name": "IllusionWalker",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illusion_walker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/illusion_walker_leggings.json",
+          "src/main/resources/assets/children_of_silence/models/item/illusion_walker_boots.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/IllusionWalkerItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/illusion_walker_helmet.json",
+          "src/main/resources/assets/children_of_silence/models/item/illusion_walker_chestplate.json"
+        ]
+      },
+      "path": "~/Slayer/Armor"
+    },
+    {
+      "name": "ManaShardOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_shard_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/forge/biome_modifier/mana_shard_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/childrenofsilence/block/ManaShardOreBlock.java",
+          "src/main/resources/data/children_of_silence/worldgen/configured_feature/mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/worldgen/placed_feature/mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/loot_tables/blocks/mana_shard_ore.json",
+          "src/main/resources/assets/children_of_silence/models/block/mana_shard_ore.json",
+          "src/main/resources/assets/children_of_silence/blockstates/mana_shard_ore.json"
+        ]
+      },
+      "path": "~/Magic System/Blocks"
+    },
+    {
+      "name": "DeepslateManaShardOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mana_shard_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/block/DeepslateManaShardOreBlock.java",
+          "src/main/resources/data/children_of_silence/worldgen/configured_feature/deepslate_mana_shard_ore.json",
+          "src/main/resources/assets/children_of_silence/blockstates/deepslate_mana_shard_ore.json",
+          "src/main/resources/assets/children_of_silence/models/block/deepslate_mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/loot_tables/blocks/deepslate_mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/forge/biome_modifier/deepslate_mana_shard_ore_biome_modifier.json",
+          "src/main/resources/assets/children_of_silence/models/item/deepslate_mana_shard_ore.json",
+          "src/main/resources/data/children_of_silence/worldgen/placed_feature/deepslate_mana_shard_ore.json"
+        ]
+      },
+      "path": "~/Magic System/Blocks"
+    },
+    {
+      "name": "ManaShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/ManaShardItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/mana_shard.json"
+        ]
+      },
+      "path": "~/Magic System/Items"
+    },
+    {
+      "name": "RefinedManShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_man_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/refined_man_shard.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/RefinedManShardItem.java"
+        ]
+      },
+      "path": "~/Magic System/Items"
+    },
+    {
+      "name": "Magic",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab"
+    },
+    {
+      "name": "ManaShardBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_shard_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/children_of_silence/loot_tables/blocks/mana_shard_block.json",
+          "src/main/resources/assets/children_of_silence/models/item/mana_shard_block.json",
+          "src/main/resources/assets/children_of_silence/blockstates/mana_shard_block.json",
+          "src/main/resources/assets/children_of_silence/models/block/mana_shard_block.json",
+          "src/main/java/net/mcreator/childrenofsilence/block/ManaShardBlockBlock.java"
+        ]
+      },
+      "path": "~/Magic System/Blocks"
+    },
+    {
+      "name": "MagicBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_blocks",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab"
+    },
+    {
+      "name": "ManaShardBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_shard_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/children_of_silence/recipes/mana_shard_block_recipe.json"
+        ]
+      },
+      "path": "~/Magic System/Recipes"
+    },
+    {
+      "name": "MagicSlotsOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_slots_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/screens/MagicSlotsOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots"
+    },
+    {
+      "name": "ReturnShowSlotIcons",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_show_slot_icons",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnShowSlotIconsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Procedures"
+    },
+    {
+      "name": "ShowSelectedSlot0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_selected_slot_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ShowSelectedSlot0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 0 Procedures"
+    },
+    {
+      "name": "ShowSelectedSlot1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_selected_slot_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ShowSelectedSlot1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 1 Procedures"
+    },
+    {
+      "name": "ShowSelectedSlot2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_selected_slot_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ShowSelectedSlot2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 2 Procedures"
+    },
+    {
+      "name": "ShowSelectedSlot3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_selected_slot_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ShowSelectedSlot3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 3 Procedures"
+    },
+    {
+      "name": "ShowSelectedSlot4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_selected_slot_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ShowSelectedSlot4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 4 Procedures"
+    },
+    {
+      "name": "ReturnSlot0MagicName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_0_magic_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot0MagicNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 0 Procedures"
+    },
+    {
+      "name": "SetSlot0OverallSpellNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_0_overall_spell_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSlot0OverallSpellNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "SetSlot1OverallSpellNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_1_overall_spell_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSlot1OverallSpellNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "SetSlot2OverallSpellNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_2_overall_spell_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSlot2OverallSpellNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "SetSlot3OverallSpellNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_3_overall_spell_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSlot3OverallSpellNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "SetSlot4OverallSpellNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_slot_4_overall_spell_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSlot4OverallSpellNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "ReturnSlot1MagicName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1_magic_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot1MagicNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 1 Procedures"
+    },
+    {
+      "name": "ReturnSlot2MagicName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2_magic_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot2MagicNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 2 Procedures"
+    },
+    {
+      "name": "ReturnSlot3MagicName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3_magic_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot3MagicNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 3 Procedures"
+    },
+    {
+      "name": "ReturnSlot4MagicName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4_magic_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot4MagicNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 4 Procedures"
+    },
+    {
+      "name": "ReturnSlot0TrueSightSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_0_true_sight_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot0TrueSightSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 0 Procedures/Return Magic icons/ID 1 - True Sight"
+    },
+    {
+      "name": "ReturnSlot1TrueSightSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1_true_sight_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot1TrueSightSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 1 Procedures/Return Magic Icons/ID 1 - True Sight"
+    },
+    {
+      "name": "ReturnSlot2TrueSightSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2_true_sight_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot2TrueSightSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 2 Procedures/Return Magic Icons/ID 1 - True Sight"
+    },
+    {
+      "name": "ManaShardFortune",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_shard_fortune",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ManaShardFortuneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Procedures"
+    },
+    {
+      "name": "DrakenAnchor",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_anchor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/DrakenAnchorItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/draken_anchor.json"
+        ]
+      },
+      "path": "~/Draken/Weapons"
+    },
+    {
+      "name": "ManaSickness",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_sickness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/potion/ManaSicknessMobEffect.java"
+        ]
+      },
+      "path": "~/Potion Effects"
+    },
+    {
+      "name": "ManaSicknessProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_sickness_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ManaSicknessProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potion Effects/Procedures"
+    },
+    {
+      "name": "ManaSicknessEndProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_sickness_end_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ManaSicknessEndProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potion Effects/Procedures"
+    },
+    {
+      "name": "DrakenTabSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_tab_sprite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/DrakenTabSpriteItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/draken_tab_sprite.json"
+        ]
+      },
+      "path": "~/Criative Tab/Draken"
+    },
+    {
+      "name": "DrakenTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab/Draken"
+    },
+    {
+      "name": "FireBallSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_sprite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/fire_ball_sprite.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/FireBallSpriteItem.java"
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Sprite"
+    },
+    {
+      "name": "ReturnSlot3TrueSightSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3_true_sight_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot3TrueSightSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 3 Procedures/Return Magic Icons/ID 1 - True Sight"
+    },
+    {
+      "name": "ReturnSlot4TrueSightSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4_true_sight_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot4TrueSightSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 4 Procedures/Return Magic Icons/ID 1 - True Sight"
+    },
+    {
+      "name": "ReturnSlot0FireBallSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_0_fire_ball_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot0FireBallSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 0 Procedures/Return Magic icons/ID 2 - Fire Ball"
+    },
+    {
+      "name": "ReturnSlot1FireBallSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1_fire_ball_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot1FireBallSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 1 Procedures/Return Magic Icons/ID 2 - Fire Ball"
+    },
+    {
+      "name": "ReturnSlot2FireBallSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2_fire_ball_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot2FireBallSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 2 Procedures/Return Magic Icons/ID 2 - Fire Ball"
+    },
+    {
+      "name": "ReturnSlot3FireBallSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3_fire_ball_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot3FireBallSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 3 Procedures/Return Magic Icons/ID 2 - Fire Ball"
+    },
+    {
+      "name": "ReturnSlot4FireBallSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4_fire_ball_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot4FireBallSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 4 Procedures/Return Magic Icons/ID 2 - Fire Ball"
+    },
+    {
+      "name": "CoSSetSpellOnSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "co_s_set_spell_on_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CoSSetSpellOnSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/SetSpell"
+    },
+    {
+      "name": "FireBallProjectile",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/FireBallProjectileRenderer.java",
+          "src/main/java/net/mcreator/childrenofsilence/entity/FireBallProjectileEntity.java"
+        ]
+      },
+      "path": "~/Magic System/Entities/Projectiles"
+    },
+    {
+      "name": "FireBallSpawnParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_spawn_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/FireBallSpawnParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
+    },
+    {
+      "name": "DrakenRapier",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_rapier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/DrakenRapierItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/draken_rapier.json"
+        ]
+      },
+      "path": "~/Draken/Weapons"
+    },
+    {
+      "name": "AngleChecker",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angle_checker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/AngleCheckerItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/angle_checker.json"
+        ]
+      },
+      "path": "~/Debug/Check Look Angle"
+    },
+    {
+      "name": "AngleCheckerProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angle_checker_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/AngleCheckerProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Debug/Check Look Angle"
+    },
+    {
+      "name": "SpawnFireBall",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_fire_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SpawnFireBallProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
+    },
+    {
+      "name": "FireBall",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/entity/FireBallEntity.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/FireBallRenderer.java"
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Projectiles"
+    },
+    {
+      "name": "FireBallExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/FireBallExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
+    },
+    {
+      "name": "WhileFireBallIsFlying",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "while_fire_ball_is_flying",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/WhileFireBallIsFlyingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
+    },
+    {
+      "name": "LichOfTheDarkness",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lich_of_the_darkness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/LichOfTheDarknessRenderer.java",
+          "src/main/java/net/mcreator/childrenofsilence/entity/LichOfTheDarknessEntity.java",
+          "src/main/java/net/mcreator/childrenofsilence/entity/model/LichOfTheDarknessModel.java",
+          "src/main/resources/assets/children_of_silence/models/item/lich_of_the_darkness_spawn_egg.json"
+        ]
+      },
+      "path": "~/Mobs/Lich of The Darkness"
+    },
+    {
+      "name": "ElvenNekclace",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_nekclace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/ElvenNekclaceRenderer.java",
+          "src/main/resources/assets/children_of_silence/models/item/elven_nekclace.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/ElvenNekclaceItem.java"
+        ]
+      },
+      "path": "~/Hayate/Armor/Curious"
+    },
+    {
+      "name": "KatanaBecomesOversized",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katana_becomes_oversized",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KatanaBecomesOversizedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Hayate/Procedures"
+    },
+    {
+      "name": "OverzidesBecomesKatana",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overzides_becomes_katana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/OverzidesBecomesKatanaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Hayate/Procedures"
+    },
+    {
+      "name": "StatsGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/world/inventory/StatsGuiMenu.java",
+          "src/main/java/net/mcreator/childrenofsilence/network/StatsGuiButtonMessage.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/gui/StatsGuiScreen.java"
+        ]
+      },
+      "path": "~/Stats System/Menu"
+    },
+    {
+      "name": "ReturnStr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_str",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnStrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "ReturnDex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_dex",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnDexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "ReturnCon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_con",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnConProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "KeyV",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_v",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyVProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "StatsMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/StatsMenuMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "IncreaseStr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_str",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/IncreaseStrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "IncreaseDex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_dex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/IncreaseDexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "IncreaseCon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_con",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/IncreaseConProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "StatToAtribute",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_to_atribute",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/StatToAtributeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "ResetStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ResetStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "KeyR",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_r",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyRProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "ToggleRunMode",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_run_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/ToggleRunModeMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "ReturnStatPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_stat_points",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnStatPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "CosStatsSetStr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_set_str",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsSetStrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Set"
+    },
+    {
+      "name": "CosStatsSetDex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_set_dex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsSetDexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Set"
+    },
+    {
+      "name": "CosStatsSetCon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_set_con",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsSetConProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Set"
+    },
+    {
+      "name": "CosStatsSetStatsPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_set_stats_points",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsSetStatsPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Set"
+    },
+    {
+      "name": "CosStatsAddStr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_add_str",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsAddStrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Add"
+    },
+    {
+      "name": "CosStatsAddDex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_add_dex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsAddDexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Add"
+    },
+    {
+      "name": "CosStatsAddCon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_add_con",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsAddConProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Add"
+    },
+    {
+      "name": "CosStatsAddStatsPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_add_stats_points",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsAddStatsPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Add"
+    },
+    {
+      "name": "ElvenCoffin",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_coffin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/blockstates/elven_coffin.json",
+          "src/main/resources/assets/children_of_silence/models/block/elven_coffin.json",
+          "src/main/java/net/mcreator/childrenofsilence/block/ElvenCoffinBlock.java",
+          "src/main/resources/data/children_of_silence/loot_tables/blocks/elven_coffin.json",
+          "src/main/resources/assets/children_of_silence/models/item/elven_coffin.json"
+        ]
+      },
+      "path": "~/Hayate/Blocks"
+    },
+    {
+      "name": "ElvenCoffinNoSword",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_coffin_no_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/block/ElvenCoffinNoSwordBlock.java",
+          "src/main/resources/data/children_of_silence/loot_tables/blocks/elven_coffin_no_sword.json",
+          "src/main/resources/assets/children_of_silence/blockstates/elven_coffin_no_sword.json",
+          "src/main/resources/assets/children_of_silence/models/block/elven_coffin_no_sword.json",
+          "src/main/resources/assets/children_of_silence/models/item/elven_coffin_no_sword.json"
+        ]
+      },
+      "path": "~/Hayate/Blocks"
+    },
+    {
+      "name": "GetSwordFromCoffin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_sword_from_coffin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/GetSwordFromCoffinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Hayate/Procedures"
+    },
+    {
+      "name": "ElvenMausoleum",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elven_mausoleum",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/children_of_silence/worldgen/structure/elven_mausoleum.json",
+          "src/main/resources/data/children_of_silence/worldgen/structure_set/elven_mausoleum.json",
+          "src/main/resources/data/children_of_silence/worldgen/template_pool/elven_mausoleum.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ReturnInt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_int",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnIntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Menu/Procedures"
+    },
+    {
+      "name": "IncreaseInt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increase_int",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/IncreaseIntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "CosStatsSetInt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stats_set_int",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStatsSetIntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Set"
+    },
+    {
+      "name": "CosStastAddInt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cos_stast_add_int",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/CosStastAddIntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Stats/Add"
+    },
+    {
+      "name": "SetStatsUponJoining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_stats_upon_joining",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetStatsUponJoiningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Stats System/Procedures"
+    },
+    {
+      "name": "HayateRustedKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hayate_rusted_katana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/hayate_rusted_katana.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/HayateRustedKatanaItem.java"
+        ]
+      },
+      "path": "~/Hayate/Weapons"
+    },
+    {
+      "name": "SeaTransformationSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_sprite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/sea_transformation_sprite.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/SeaTransformationSpriteItem.java"
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Sprite"
+    },
+    {
+      "name": "ReturnSlot0SeaTransormationSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_0_sea_transormation_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot0SeaTransormationSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 0 Procedures/Return Magic icons/ID 3 - Sea Transformation"
+    },
+    {
+      "name": "ReturnSlot1SeaTransormationSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_1_sea_transormation_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot1SeaTransormationSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 1 Procedures/Return Magic Icons/ID 3 - Sea Transformation"
+    },
+    {
+      "name": "ReturnSlot2SeaTransormationSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_2_sea_transormation_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot2SeaTransormationSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 2 Procedures/Return Magic Icons/ID 3 - Sea Transformation"
+    },
+    {
+      "name": "ReturnSlot3SeaTransormationSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_3_sea_transormation_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot3SeaTransormationSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 3 Procedures/Return Magic Icons/ID 3 - Sea Transformation"
+    },
+    {
+      "name": "ReturnSlot4SeaTransormationSlot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_slot_4_sea_transormation_slot",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnSlot4SeaTransormationSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Overlays/Magic Slots/Slot 4 Procedures/Return Magic Icons/ID 3 - Sea Transformation"
+    },
+    {
+      "name": "Penguin",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penguin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/penguin_spawn_egg.json",
+          "src/main/java/net/mcreator/childrenofsilence/entity/PenguinEntity.java",
+          "src/main/resources/data/children_of_silence/forge/biome_modifier/penguin_biome_modifier.json",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/PenguinRenderer.java",
+          "src/main/java/net/mcreator/childrenofsilence/entity/model/PenguinModel.java"
+        ]
+      },
+      "path": "~/Mobs/Penguin"
+    },
+    {
+      "name": "SeaTransformationGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/world/inventory/SeaTransformationGuiMenu.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/gui/SeaTransformationGuiScreen.java",
+          "src/main/java/net/mcreator/childrenofsilence/network/SeaTransformationGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Menu"
+    },
+    {
+      "name": "ReturnPenguinModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_penguin_model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnPenguinModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Menu/Procedures"
+    },
+    {
+      "name": "SeaTransformationPenguin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_penguin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SeaTransformationPenguinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Procedures"
+    },
+    {
+      "name": "SetPenguinTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_penguin_true",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetPenguinTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Menu/Procedures"
+    },
+    {
+      "name": "ReturnAxolotlModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_axolotl_model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/ReturnAxolotlModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Menu/Procedures"
+    },
+    {
+      "name": "SetAxolotlTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_axolotl_true",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetAxolotlTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Menu/Procedures"
+    },
+    {
+      "name": "SeaTransformationAxolotl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_axolotl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SeaTransformationAxolotlProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Procedures"
+    },
+    {
+      "name": "SeaTransformationPenguinSize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_penguin_size",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SeaTransformationPenguinSizeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Procedures"
+    },
+    {
+      "name": "SeaTransformationAxolotlSize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_axolotl_size",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SeaTransformationAxolotlSizeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Procedures"
+    },
+    {
+      "name": "SeaTransformationPerks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_transformation_perks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SeaTransformationPerksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Magic System/Spells/ID 3 - Sea Transformation/Procedures"
+    },
+    {
+      "name": "CowboyCoat",
+      "type": "animatedarmor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cowboy_coat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/item/model/CowboyCoatModel.java",
+          "src/main/java/net/mcreator/childrenofsilence/item/CowboyCoatItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/cowboy_coat_chestplate.json",
+          "src/main/resources/assets/children_of_silence/models/item/cowboy_coat_leggings.json",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/CowboyCoatArmorRenderer.java",
+          "src/main/resources/assets/children_of_silence/models/item/cowboy_coat_helmet.json",
+          "src/main/resources/assets/children_of_silence/models/item/cowboy_coat_boots.json"
+        ]
+      },
+      "path": "~/Draken/Armor"
+    },
+    {
+      "name": "Holy",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/children_of_silence/damage_type/holy.json"
+        ]
+      },
+      "path": "~/Damage Type/Holy"
+    },
+    {
+      "name": "LichOfDarknessSetDarknessType",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lich_of_darkness_set_darkness_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/LichOfDarknessSetDarknessTypeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mobs/Lich of The Darkness/Procedures"
+    },
+    {
+      "name": "Blessed",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blessed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/enchantment/BlessedEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantment/Blessed"
+    },
+    {
+      "name": "DrakenRapierHolyDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_rapier_holy_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/DrakenRapierHolyDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Draken/Weapons/Procedures"
+    },
+    {
+      "name": "DrakenRapierBonus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_rapier_bonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/DrakenRapierBonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Draken/Weapons/Procedures"
+    },
+    {
+      "name": "BlessedHolyDamageBonus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blessed_holy_damage_bonus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/BlessedHolyDamageBonusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantment/Blessed/Procedures"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ActualMana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "MaxMana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "SpellSlot0",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellSlot1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellSlot2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellSlot3",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellSlot4",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ActualSpellSlot",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ActualSpellInSpellSlot",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellMenuJustClosed",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "NameOfSpellInActualSlot",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "MageClass",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "ManaRegenTick",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SpellColldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TrueSightIsOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PlayerImmuneSlash",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Slot0SpellName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Slot1SpellName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Slot2SpellName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Slot3SpellName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Slot4SpellName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "RealMageClass",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "RealMaxMana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "assss",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "StatStr",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "StatDex",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "StatCon",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "RunMode",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "StatsPoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "StatInt",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "isPenguin",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isAxolotl",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "penguin_sound",
+      "files": [
+        "penguin_sound_1",
+        "penguin_sound_2"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "penguin_sound_hurt",
+      "files": [
+        "penguin_sound_hurt"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:mod:tag_spells": [
+      "CUSTOM:TrueSightSprite",
+      "CUSTOM:FireBallSprite",
+      "CUSTOM:SeaTransformationSprite"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:DeepslateManaShardOre",
+      "~CUSTOM:ManaShardOre"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DeepslateManaShardOre",
+      "~CUSTOM:ManaShardOre"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:HayateRustedKatana",
+      "~CUSTOM:DrakenRapier",
+      "~CUSTOM:DrakenAnchor",
+      "~CUSTOM:SlayerDagger",
+      "~CUSTOM:HayateClaymore",
+      "~CUSTOM:HayateKatana"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.children_of_silence.mana_shard": "Mana Shard",
+      "item.children_of_silence.sea_transformation_sprite": "Sea Transformation",
+      "item_group.children_of_silence.draken_tab": "Draken Tab",
+      "item.children_of_silence.angle_checker": "Angle Checker",
+      "gui.children_of_silence.stats_gui.label_dex": "Dex:",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
+      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "block.children_of_silence.elven_coffin": "Elven Coffin",
+      "death.attack.holy": "%1$s was purified",
+      "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
+      "entity.children_of_silence.fire_ball_projectile": "Fire Ball",
+      "gui.children_of_silence.stats_gui.label_stat_points": "Stat Points: ",
+      "gui.children_of_silence.mana_overlay.label_empty": "/",
+      "item.children_of_silence.check_mana_debug": "Check Mana Debug",
+      "item.children_of_silence.slayer_dagger": "Illusory Dagger",
+      "gui.children_of_silence.stats_gui.button_empty": "^",
+      "item.children_of_silence.fire_ball_sprite": "Fire Ball",
+      "entity.children_of_silence.penguin": "Penguin",
+      "item.children_of_silence.illusion_walker_leggings": "Illusion Walker Leggings",
+      "key.children_of_silence.previous_spell": "Previous Spell",
+      "item.children_of_silence.refined_man_shard": "Refined Mana Shard",
+      "gui.children_of_silence.stats_gui.button_reset": "Reset",
+      "item.children_of_silence.draken_tab_sprite": "Draken Tab Sprite",
+      "item_group.children_of_silence.magic_blocks": "Magic Blocks",
+      "item.children_of_silence.check_spells_slot_debug": "Check Spells Slot Debug",
+      "block.children_of_silence.deepslate_mana_shard_ore": "Deepslate Mana Shard Ore",
+      "item_group.children_of_silence.magic": "Magic Items",
+      "item.children_of_silence.spawn_particle_debug": "Spawn Particle Debug",
+      "item.children_of_silence.lich_of_the_darkness_spawn_egg": "Lich Of The Darkness Spawn Egg",
+      "gui.children_of_silence.stats_gui.label_str": "Str:",
+      "item_group.children_of_silence.spells": "Spells",
+      "subtitles.penguin_sound": "",
+      "gui.children_of_silence.stats_gui.button_empty1": "^",
+      "subtitles.penguin_sound_hurt": "",
+      "gui.children_of_silence.stats_gui.button_empty2": "^",
+      "item.children_of_silence.slayer_tab_sprite": "Slayer Tab Sprite",
+      "item.children_of_silence.hayate_katana": "Elven Katana",
+      "item.children_of_silence.illusion_walker_helmet": "Illusion Walker Helmet",
+      "key.children_of_silence.use_spell_key": "Use Spell Key",
+      "item_group.children_of_silence.hayate_tab": "Hayate",
+      "item.children_of_silence.draken_anchor": "Draken Hammer",
+      "gui.children_of_silence.stats_gui.button_empty3": "^",
+      "item.children_of_silence.hayate_claymore": "Elven Oversized",
+      "death.attack.holy.player": "%1$s was purified whilst trying to escape %2$s",
+      "item.children_of_silence.cowboy_coat_chestplate": "Cowboy Coat Chestplate",
+      "item.children_of_silence.cowboy_coat_boots": "Cowboy Coat Boots",
+      "entity.children_of_silence.lich_of_the_darkness": "Lich Of The Darkness",
+      "item.children_of_silence.cowboy_coat_leggings": "Cowboy Coat Leggings",
+      "key.children_of_silence.next_spell": "Next Spell",
+      "gui.children_of_silence.sea_transformation_gui.button_axolotl": "Axolotl",
+      "item.children_of_silence.true_sight_sprite": "True Sight",
+      "key.children_of_silence.spell_menu": "Spell Menu",
+      "item.children_of_silence.penguin_spawn_egg": "Penguin Spawn Egg",
+      "item_group.children_of_silence.slayer_tab": "Slayer",
+      "item.children_of_silence.illusion_walker_boots": "Illusion Walker Boots",
+      "block.children_of_silence.mana_shard_block": "Mana Shard Block",
+      "item.children_of_silence.elven_nekclace": "Elven Nekclace",
+      "block.children_of_silence.mana_shard_ore": "Mana Shard Ore",
+      "gui.children_of_silence.stats_gui.label_con": "Con:",
+      "item_group.children_of_silence.debug": "Debug",
+      "enchantment.children_of_silence.blessed": "Blessed",
+      "item.children_of_silence.hayate_tab_sprite": "Hayate Tab Sprite",
+      "item.children_of_silence.illusion_walker_chestplate": "Illusion Walker Chestplate",
+      "key.children_of_silence.stats_menu": "Open Stats Menu",
+      "gui.children_of_silence.sea_transformation_gui.button_penguin": "Penguin",
+      "key.children_of_silence.toggle_run_mode": "Run Mode",
+      "gui.children_of_silence.stats_gui.button_reload": "Reload",
+      "item.children_of_silence.draken_rapier": "Draken Rapier",
+      "gui.children_of_silence.stats_gui.label_int": "Int:",
+      "death.attack.holy.item": "%1$s was purified by %2$s using %3$s",
+      "item.children_of_silence.hayate_rusted_katana": "Rusted Katana"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Item",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Magic System",
+        "children": [
+          {
+            "name": "Menus",
+            "children": []
+          },
+          {
+            "name": "Spells",
+            "children": [
+              {
+                "name": "ID 1 - True Sight",
+                "children": [
+                  {
+                    "name": "Sprite",
+                    "children": []
+                  },
+                  {
+                    "name": "Procedures",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "ID 2 - Fire Ball",
+                "children": [
+                  {
+                    "name": "Sprite",
+                    "children": []
+                  },
+                  {
+                    "name": "Procedures",
+                    "children": []
+                  },
+                  {
+                    "name": "Projectiles",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "ID 3 - Sea Transformation",
+                "children": [
+                  {
+                    "name": "Sprite",
+                    "children": []
+                  },
+                  {
+                    "name": "Procedures",
+                    "children": []
+                  },
+                  {
+                    "name": "Menu",
+                    "children": [
+                      {
+                        "name": "Procedures",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Overlays",
+            "children": [
+              {
+                "name": "Magic Slots",
+                "children": [
+                  {
+                    "name": "Slot 0 Procedures",
+                    "children": [
+                      {
+                        "name": "Return Magic icons",
+                        "children": [
+                          {
+                            "name": "ID 1 - True Sight",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 2 - Fire Ball",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 3 - Sea Transformation",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Slot 1 Procedures",
+                    "children": [
+                      {
+                        "name": "Return Magic Icons",
+                        "children": [
+                          {
+                            "name": "ID 1 - True Sight",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 2 - Fire Ball",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 3 - Sea Transformation",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Slot 2 Procedures",
+                    "children": [
+                      {
+                        "name": "Return Magic Icons",
+                        "children": [
+                          {
+                            "name": "ID 1 - True Sight",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 2 - Fire Ball",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 3 - Sea Transformation",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Slot 3 Procedures",
+                    "children": [
+                      {
+                        "name": "Return Magic Icons",
+                        "children": [
+                          {
+                            "name": "ID 1 - True Sight",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 2 - Fire Ball",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 3 - Sea Transformation",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Slot 4 Procedures",
+                    "children": [
+                      {
+                        "name": "Return Magic Icons",
+                        "children": [
+                          {
+                            "name": "ID 1 - True Sight",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 2 - Fire Ball",
+                            "children": []
+                          },
+                          {
+                            "name": "ID 3 - Sea Transformation",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Procedures",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Entities",
+            "children": [
+              {
+                "name": "Projectiles",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Keys",
+        "children": [
+          {
+            "name": "Keys Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Criative Tab",
+        "children": [
+          {
+            "name": "Hayate",
+            "children": []
+          },
+          {
+            "name": "Slayer",
+            "children": []
+          },
+          {
+            "name": "Draken",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Debug",
+        "children": [
+          {
+            "name": "Check Spells Slot",
+            "children": []
+          },
+          {
+            "name": "Check Mana",
+            "children": []
+          },
+          {
+            "name": "SpawnParticle",
+            "children": []
+          },
+          {
+            "name": "Spawn Slashs",
+            "children": []
+          },
+          {
+            "name": "Check Look Angle",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "SetSpell",
+            "children": []
+          },
+          {
+            "name": "Stats",
+            "children": [
+              {
+                "name": "Set",
+                "children": []
+              },
+              {
+                "name": "Add",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hayate",
+        "children": [
+          {
+            "name": "Weapons",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Armor",
+            "children": [
+              {
+                "name": "Curious",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Blocks",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Slayer",
+        "children": [
+          {
+            "name": "Weapons",
+            "children": []
+          },
+          {
+            "name": "Armor",
+            "children": []
+          },
+          {
+            "name": "Items",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Draken",
+        "children": [
+          {
+            "name": "Weapons",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Armor",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potion Effects",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mobs",
+        "children": [
+          {
+            "name": "Lich of The Darkness",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Penguin",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Curious",
+        "children": []
+      },
+      {
+        "name": "Stats System",
+        "children": [
+          {
+            "name": "Menu",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Structures",
+        "children": []
+      },
+      {
+        "name": "Rodrigo",
+        "children": []
+      },
+      {
+        "name": "Damage Type",
+        "children": [
+          {
+            "name": "Holy",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Enchantment",
+        "children": [
+          {
+            "name": "Blessed",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "children_of_silence",
+    "modName": "Children of Silence",
+    "version": "1.0.0",
+    "author": "geomt, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "curios_api",
+      "bettercombat",
+      "geckolib",
+      "playeranimator",
+      "cloth-config"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.childrenofsilence"
+  },
+  "mcreatorVersion": 202400232117
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/pink_guitar",
+  "textures": {
+    "0": "children_of_silence:block/pink_guitar",
+    "particle": "children_of_silence:item/pink_guitar"
+  }
+}

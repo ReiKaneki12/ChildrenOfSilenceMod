@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/illusory_dagger",
+  "textures": {
+    "2": "children_of_silence:block/illusory_dagger",
+    "particle": "children_of_silence:item/illusory_dagger"
+  }
+}

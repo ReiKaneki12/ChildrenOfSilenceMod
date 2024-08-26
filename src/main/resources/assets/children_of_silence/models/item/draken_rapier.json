@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/draken_rapier",
+  "textures": {
+    "0": "children_of_silence:block/draken_rapier",
+    "particle": "children_of_silence:item/draken_rapier"
+  }
+}

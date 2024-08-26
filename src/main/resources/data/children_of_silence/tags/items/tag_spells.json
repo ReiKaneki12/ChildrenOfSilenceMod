@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "children_of_silence:true_sight_sprite",
+    "children_of_silence:fire_ball_sprite",
+    "children_of_silence:sea_transformation_sprite"
+  ]
+}

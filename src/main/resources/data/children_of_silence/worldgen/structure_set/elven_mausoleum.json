@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "children_of_silence:elven_mausoleum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 45,
+    "salt": 647039831
+  }
+}

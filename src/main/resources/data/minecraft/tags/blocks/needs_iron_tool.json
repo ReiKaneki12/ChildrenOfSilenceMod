@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "children_of_silence:deepslate_mana_shard_ore",
+    "children_of_silence:mana_shard_ore"
+  ]
+}

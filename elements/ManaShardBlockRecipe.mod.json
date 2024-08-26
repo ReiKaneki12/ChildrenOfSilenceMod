@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "mana_shard_block",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      },
+      {
+        "value": "CUSTOM:ManaShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ManaShardBlock"
+    },
+    "name": "mana_shard_block_recipe",
+    "namespace": "mod"
+  }
+}

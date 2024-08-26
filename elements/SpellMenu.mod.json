@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Spell Menu",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KeyM"
+    }
+  }
+}

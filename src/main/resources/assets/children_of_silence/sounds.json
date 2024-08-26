@@ -1,0 +1,22 @@
+{
+  "penguin_sound": {
+    "sounds": [
+      {
+        "name": "children_of_silence:penguin_sound_1",
+        "stream": false
+      },
+      {
+        "name": "children_of_silence:penguin_sound_2",
+        "stream": false
+      }
+    ]
+  },
+  "penguin_sound_hurt": {
+    "sounds": [
+      {
+        "name": "children_of_silence:penguin_sound_hurt",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "children_of_silence:blocks/mana_shard_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "children_of_silence:mana_shard_block"
+        }
+      ]
+    }
+  ]
+}

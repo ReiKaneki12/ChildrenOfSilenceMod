@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Draken Tab",
+    "icon": {
+      "value": "CUSTOM:DrakenTabSprite"
+    },
+    "showSearch": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Debug",
+    "icon": {
+      "value": "Items.DEBUG_STICK"
+    },
+    "showSearch": true
+  }
+}

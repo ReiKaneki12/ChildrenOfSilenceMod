@@ -1,0 +1,78 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnPenguinModel"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 206,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_penguin",
+          "text": "Penguin",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetPenguinTrue"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 131,
+          "y": 56
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_axolotl",
+          "text": "Axolotl",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetAxolotlTrue"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 131,
+          "y": 156
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnAxolotlModel"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 206,
+          "y": 151
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 1,
+      "oy": 1,
+      "snapOnGrid": true
+    }
+  }
+}

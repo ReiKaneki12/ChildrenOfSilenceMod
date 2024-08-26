@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Mana Sickness",
+    "icon": "mana_sickness.png",
+    "color": {
+      "value": -4728676,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ManaSicknessProcedure"
+    },
+    "onExpired": {
+      "name": "ManaSicknessEndProcedure"
+    }
+  }
+}

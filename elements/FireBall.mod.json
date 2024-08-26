@@ -1,0 +1,28 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:FireBallSprite"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "ambient.basalt_deltas.additions"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelfire_ball",
+    "customModelTexture": "fire_ball.png",
+    "onHitsBlock": {
+      "name": "FireBallExplosion"
+    },
+    "onHitsEntity": {
+      "name": "FireBallExplosion"
+    },
+    "onFlyingTick": {
+      "name": "WhileFireBallIsFlying"
+    }
+  }
+}

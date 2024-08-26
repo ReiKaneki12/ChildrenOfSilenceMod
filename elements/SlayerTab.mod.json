@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Slayer",
+    "icon": {
+      "value": "CUSTOM:SlayerTabSprite"
+    },
+    "showSearch": true
+  }
+}

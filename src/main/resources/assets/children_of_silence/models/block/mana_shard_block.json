@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "children_of_silence:block/mana_shard_block",
+    "up": "children_of_silence:block/mana_shard_block",
+    "north": "children_of_silence:block/mana_shard_block",
+    "east": "children_of_silence:block/mana_shard_block",
+    "south": "children_of_silence:block/mana_shard_block",
+    "west": "children_of_silence:block/mana_shard_block",
+    "particle": "children_of_silence:block/mana_shard_block"
+  },
+  "render_type": "solid"
+}

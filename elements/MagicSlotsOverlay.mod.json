@@ -1,0 +1,416 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "unselected_magic_slot.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 193
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unselected_magic_slot.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 167
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unselected_magic_slot.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 141
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unselected_magic_slot.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 115
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unselected_magic_slot.png",
+          "use1Xscale": false,
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selected_magic_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSelectedSlot4"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 193
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selected_magic_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSelectedSlot3"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 167
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selected_magic_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSelectedSlot2"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 141
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selected_magic_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSelectedSlot1"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 115
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selected_magic_slot.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSelectedSlot0"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 246,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_slot_0_magic_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSlot0MagicName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 253,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_slot_1_magic_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSlot1MagicName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 253,
+          "y": 122
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_slot_2_magic_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSlot2MagicName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 253,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_slot_3_magic_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSlot3MagicName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 253,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_slot_4_magic_name",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSlot4MagicName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 253,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "true_sight_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot0TrueSightSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "true_sight_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot1TrueSightSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 119
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "true_sight_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot2TrueSightSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "true_sight_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot3TrueSightSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 171
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "true_sight_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot4TrueSightSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_ball_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot0FireBallSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_ball_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot1FireBallSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 119
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_ball_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot2FireBallSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_ball_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot3FireBallSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 171
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire_ball_magic_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot4FireBallSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fish.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot0SeaTransormationSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fish.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot1SeaTransormationSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 119
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fish.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot2SeaTransormationSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fish.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot3SeaTransormationSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 171
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fish.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ReturnSlot4SeaTransormationSlot"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 404,
+          "y": 197
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ReturnShowSlotIcons"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/elven_oversized",
+  "textures": {
+    "0": "children_of_silence:block/elven_oversized",
+    "particle": "children_of_silence:item/elven_oversized"
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_str",
+          "text": {
+            "fixedValue": "Str:"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dex",
+          "text": {
+            "fixedValue": "Dex:"
+          },
+          "color": {
+            "value": -16711834,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_con",
+          "text": {
+            "fixedValue": "Con:"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_str",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnStr"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_dex",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnDex"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_con",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnCon"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "^",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncreaseStr"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 186,
+          "y": 41
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "^",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncreaseDex"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 186,
+          "y": 76
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "^",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncreaseCon"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 186,
+          "y": 111
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_reset",
+          "text": "Reset",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ResetStats"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 246,
+          "y": 176
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stat_points",
+          "text": {
+            "fixedValue": "Stat Points: "
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_stat_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnStatPoints"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "x": 191,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_int",
+          "text": {
+            "fixedValue": "Int:"
+          },
+          "color": {
+            "value": -16763905,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 151
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_int",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnInt"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 151
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": "^",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncreaseInt"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 186,
+          "y": 146
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 10,
+      "sy": 10,
+      "ox": 1,
+      "oy": 1,
+      "snapOnGrid": true
+    }
+  }
+}

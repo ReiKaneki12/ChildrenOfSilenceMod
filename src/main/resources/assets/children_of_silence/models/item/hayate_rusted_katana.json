@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/rusted_elven_katana",
+  "textures": {
+    "0": "children_of_silence:block/rusted_elven_katana",
+    "particle": "children_of_silence:item/rusted_elven_katana"
+  }
+}

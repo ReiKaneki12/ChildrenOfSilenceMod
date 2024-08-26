@@ -1,0 +1,9 @@
+{
+  "parent": "children_of_silence:custom/elven_coffin",
+  "textures": {
+    "all": "children_of_silence:block/elven_coffin",
+    "particle": "children_of_silence:block/elven_coffin",
+    "0": "children_of_silence:block/elven_coffin"
+  },
+  "render_type": "solid"
+}

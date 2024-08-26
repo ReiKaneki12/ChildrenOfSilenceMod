@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "children_of_silence:block/deepslate_mana_shard_ore",
+    "particle": "children_of_silence:block/deepslate_mana_shard_ore"
+  },
+  "render_type": "solid"
+}
