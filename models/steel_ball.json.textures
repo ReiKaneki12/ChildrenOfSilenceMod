@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "steel_ball"
+      },
+      "name": "default"
+    }
+  }
+}
