@@ -14,9 +14,6 @@
     "damage": 5.0,
     "knockback": 5,
     "entityModel": "Modelsteel_ball_projectile",
-    "customModelTexture": "steel_ball.png",
-    "onFlyingTick": {
-      "name": "SetSteelBallGravity"
-    }
+    "customModelTexture": "steel_ball.png"
   }
 }
