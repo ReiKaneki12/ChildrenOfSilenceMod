@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/steel_ball",
+  "textures": {
+    "0": "children_of_silence:block/steel_ball",
+    "particle": "children_of_silence:item/steel_ball"
+  }
+}

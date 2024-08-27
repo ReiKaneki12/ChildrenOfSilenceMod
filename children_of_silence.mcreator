@@ -2979,6 +2979,57 @@
         ]
       },
       "path": "~/Enchantment/Blessed/Procedures"
+    },
+    {
+      "name": "DrakenSteelBall",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_steel_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/draken_steel_ball.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/DrakenSteelBallItem.java"
+        ]
+      },
+      "path": "~/Draken/Weapons"
+    },
+    {
+      "name": "DrakenSteelBallProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_steel_ball_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/entity/DrakenSteelBallProjectileEntity.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/DrakenSteelBallProjectileRenderer.java"
+        ]
+      },
+      "path": "~/Draken/Projectiles"
+    },
+    {
+      "name": "DrakenSteelBallShoot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "draken_steel_ball_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/DrakenSteelBallShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Draken/Weapons/Procedures"
     }
   ],
   "variable_elements": [
@@ -3225,8 +3276,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "effect.children_of_silence.mana_sickness": "Mana Sickness",
+      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
@@ -3290,7 +3341,8 @@
       "item.children_of_silence.draken_rapier": "Draken Rapier",
       "gui.children_of_silence.stats_gui.label_int": "Int:",
       "death.attack.holy.item": "%1$s was purified by %2$s using %3$s",
-      "item.children_of_silence.hayate_rusted_katana": "Rusted Katana"
+      "item.children_of_silence.hayate_rusted_katana": "Rusted Katana",
+      "item.children_of_silence.draken_steel_ball": "Steel Ball"
     }
   },
   "foldersRoot": {
@@ -3661,6 +3713,10 @@
           },
           {
             "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "Projectiles",
             "children": []
           }
         ]
