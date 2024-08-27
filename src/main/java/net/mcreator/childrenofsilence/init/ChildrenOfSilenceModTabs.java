@@ -64,6 +64,7 @@ public class ChildrenOfSilenceModTabs {
 				tabData.accept(ChildrenOfSilenceModItems.COWBOY_COAT_CHESTPLATE.get());
 				tabData.accept(ChildrenOfSilenceModItems.COWBOY_COAT_LEGGINGS.get());
 				tabData.accept(ChildrenOfSilenceModItems.COWBOY_COAT_BOOTS.get());
+				tabData.accept(ChildrenOfSilenceModItems.DRAKEN_STEEL_BALL.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> DEBUG = REGISTRY.register("debug",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.children_of_silence.debug")).icon(() -> new ItemStack(Items.DEBUG_STICK)).displayItems((parameters, tabData) -> {

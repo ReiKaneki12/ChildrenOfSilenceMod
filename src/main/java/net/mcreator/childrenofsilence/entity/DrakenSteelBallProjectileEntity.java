@@ -19,6 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.childrenofsilence.procedures.SetSteelBallGravityProcedure;
 import net.mcreator.childrenofsilence.init.ChildrenOfSilenceModItems;
 import net.mcreator.childrenofsilence.init.ChildrenOfSilenceModEntities;
 
@@ -67,6 +68,7 @@ public class DrakenSteelBallProjectileEntity extends AbstractArrow implements It
 	@Override
 	public void tick() {
 		super.tick();
+		SetSteelBallGravityProcedure.execute(this);
 		if (this.inGround)
 			this.discard();
 	}

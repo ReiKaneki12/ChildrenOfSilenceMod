@@ -13,6 +13,7 @@ import net.mcreator.childrenofsilence.client.renderer.PenguinRenderer;
 import net.mcreator.childrenofsilence.client.renderer.LichOfTheDarknessRenderer;
 import net.mcreator.childrenofsilence.client.renderer.FireBallRenderer;
 import net.mcreator.childrenofsilence.client.renderer.FireBallProjectileRenderer;
+import net.mcreator.childrenofsilence.client.renderer.DrakenSteelBallProjectileRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ChildrenOfSilenceModEntityRenderers {
@@ -22,5 +23,6 @@ public class ChildrenOfSilenceModEntityRenderers {
 		event.registerEntityRenderer(ChildrenOfSilenceModEntities.FIRE_BALL.get(), FireBallRenderer::new);
 		event.registerEntityRenderer(ChildrenOfSilenceModEntities.LICH_OF_THE_DARKNESS.get(), LichOfTheDarknessRenderer::new);
 		event.registerEntityRenderer(ChildrenOfSilenceModEntities.PENGUIN.get(), PenguinRenderer::new);
+		event.registerEntityRenderer(ChildrenOfSilenceModEntities.DRAKEN_STEEL_BALL_PROJECTILE.get(), DrakenSteelBallProjectileRenderer::new);
 	}
 }

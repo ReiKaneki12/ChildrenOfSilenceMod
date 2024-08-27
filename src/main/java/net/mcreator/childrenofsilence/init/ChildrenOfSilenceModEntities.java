@@ -20,6 +20,7 @@ import net.mcreator.childrenofsilence.entity.PenguinEntity;
 import net.mcreator.childrenofsilence.entity.LichOfTheDarknessEntity;
 import net.mcreator.childrenofsilence.entity.FireBallProjectileEntity;
 import net.mcreator.childrenofsilence.entity.FireBallEntity;
+import net.mcreator.childrenofsilence.entity.DrakenSteelBallProjectileEntity;
 import net.mcreator.childrenofsilence.ChildrenOfSilenceMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -37,6 +38,9 @@ public class ChildrenOfSilenceModEntities {
 			EntityType.Builder.<PenguinEntity>of(PenguinEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PenguinEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DrakenSteelBallProjectileEntity>> DRAKEN_STEEL_BALL_PROJECTILE = register("draken_steel_ball_projectile",
+			EntityType.Builder.<DrakenSteelBallProjectileEntity>of(DrakenSteelBallProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(DrakenSteelBallProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

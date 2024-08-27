@@ -2988,8 +2988,8 @@
       "registry_name": "draken_steel_ball",
       "metadata": {
         "files": [
-          "src/main/resources/assets/children_of_silence/models/item/draken_steel_ball.json",
-          "src/main/java/net/mcreator/childrenofsilence/item/DrakenSteelBallItem.java"
+          "src/main/java/net/mcreator/childrenofsilence/item/DrakenSteelBallItem.java",
+          "src/main/resources/assets/children_of_silence/models/item/draken_steel_ball.json"
         ]
       },
       "path": "~/Draken/Weapons"
@@ -3002,8 +3002,8 @@
       "registry_name": "draken_steel_ball_projectile",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/childrenofsilence/entity/DrakenSteelBallProjectileEntity.java",
-          "src/main/java/net/mcreator/childrenofsilence/client/renderer/DrakenSteelBallProjectileRenderer.java"
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/DrakenSteelBallProjectileRenderer.java",
+          "src/main/java/net/mcreator/childrenofsilence/entity/DrakenSteelBallProjectileEntity.java"
         ]
       },
       "path": "~/Draken/Projectiles"
@@ -3026,6 +3026,25 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Draken/Weapons/Procedures"
+    },
+    {
+      "name": "SetSteelBallGravity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_steel_ball_gravity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/SetSteelBallGravityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
           }
         ]
       },

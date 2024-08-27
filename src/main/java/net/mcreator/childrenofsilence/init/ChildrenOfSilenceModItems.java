@@ -29,6 +29,7 @@ import net.mcreator.childrenofsilence.item.HayateClaymoreItem;
 import net.mcreator.childrenofsilence.item.FireBallSpriteItem;
 import net.mcreator.childrenofsilence.item.ElvenNekclaceItem;
 import net.mcreator.childrenofsilence.item.DrakenTabSpriteItem;
+import net.mcreator.childrenofsilence.item.DrakenSteelBallItem;
 import net.mcreator.childrenofsilence.item.DrakenRapierItem;
 import net.mcreator.childrenofsilence.item.DrakenAnchorItem;
 import net.mcreator.childrenofsilence.item.CowboyCoatItem;
@@ -74,6 +75,7 @@ public class ChildrenOfSilenceModItems {
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_CHESTPLATE = REGISTRY.register("cowboy_coat_chestplate", () -> new CowboyCoatItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_LEGGINGS = REGISTRY.register("cowboy_coat_leggings", () -> new CowboyCoatItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_BOOTS = REGISTRY.register("cowboy_coat_boots", () -> new CowboyCoatItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> DRAKEN_STEEL_BALL = REGISTRY.register("draken_steel_ball", () -> new DrakenSteelBallItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
