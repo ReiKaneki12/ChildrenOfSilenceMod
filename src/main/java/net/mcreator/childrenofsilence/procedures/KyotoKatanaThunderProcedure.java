@@ -13,13 +13,14 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.childrenofsilence.init.ChildrenOfSilenceModItems;
 
 public class KyotoKatanaThunderProcedure {
-	public static void execute(LevelAccessor world, double z, Entity entity, Entity sourceentity) {
+	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ChildrenOfSilenceModItems.KYOTO_KATANA.get()) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), z)));;
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));
+				entityToSpawn.setVisualOnly(true);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}

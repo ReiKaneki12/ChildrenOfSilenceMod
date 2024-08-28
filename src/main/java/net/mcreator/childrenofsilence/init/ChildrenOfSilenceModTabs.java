@@ -30,6 +30,7 @@ public class ChildrenOfSilenceModTabs {
 				tabData.accept(ChildrenOfSilenceModBlocks.ELVEN_COFFIN.get().asItem());
 				tabData.accept(ChildrenOfSilenceModBlocks.ELVEN_COFFIN_NO_SWORD.get().asItem());
 				tabData.accept(ChildrenOfSilenceModItems.HAYATE_RUSTED_KATANA.get());
+				tabData.accept(ChildrenOfSilenceModItems.KYOTO_KATANA.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> MAGIC_BLOCKS = REGISTRY.register("magic_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.children_of_silence.magic_blocks")).icon(() -> new ItemStack(ChildrenOfSilenceModBlocks.MANA_SHARD_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -76,11 +77,11 @@ public class ChildrenOfSilenceModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(ChildrenOfSilenceModItems.KYOTO_KATANA.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ChildrenOfSilenceModItems.LICH_OF_THE_DARKNESS_SPAWN_EGG.get());
 			tabData.accept(ChildrenOfSilenceModItems.PENGUIN_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(ChildrenOfSilenceModItems.KYOTO_KATANA.get());
 		}
 	}
 }

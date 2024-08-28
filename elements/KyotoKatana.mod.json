@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "tool",
   "definition": {
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "debug_stick",
@@ -14,20 +14,23 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:HayateTab"
+      },
+      {
+        "value": "COMBAT"
       }
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 11.0,
     "usageCount": 100,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
-    "immuneToFire": false,
-    "blockDropsTier": "WOOD",
+    "immuneToFire": true,
+    "blockDropsTier": "STONE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
