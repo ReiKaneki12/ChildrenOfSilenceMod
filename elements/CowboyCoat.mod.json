@@ -3,13 +3,13 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ilussionwalker_helmet",
+    "textureHelmet": "cowboy_helmet",
     "enableBody": true,
-    "textureBody": "ilussionwalker_chestplate",
+    "textureBody": "cowboy_chestplace",
     "enableLeggings": true,
-    "textureLeggings": "ilussionwalker_leggings",
+    "textureLeggings": "cowboy_leggings",
     "enableBoots": true,
-    "textureBoots": "ilussionwalker_boots",
+    "textureBoots": "cowboy_boots",
     "creativeTabs": [
       {
         "value": "CUSTOM:DrakenTab"
