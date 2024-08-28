@@ -6,8 +6,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 
-public class RuinOfHadesSpearItem extends SwordItem {
-	public RuinOfHadesSpearItem() {
+public class RuinOfHadesLanceItem extends SwordItem {
+	public RuinOfHadesLanceItem() {
 		super(new Tier() {
 			public int getUses() {
 				return 5200;

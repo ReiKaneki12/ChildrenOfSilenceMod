@@ -19,7 +19,7 @@ import net.mcreator.childrenofsilence.item.SpawnParticleDebugItem;
 import net.mcreator.childrenofsilence.item.SlayerTabSpriteItem;
 import net.mcreator.childrenofsilence.item.SlayerDaggerItem;
 import net.mcreator.childrenofsilence.item.SeaTransformationSpriteItem;
-import net.mcreator.childrenofsilence.item.RuinOfHadesSpearItem;
+import net.mcreator.childrenofsilence.item.RuinOfHadesLanceItem;
 import net.mcreator.childrenofsilence.item.RefinedManShardItem;
 import net.mcreator.childrenofsilence.item.ManaShardItem;
 import net.mcreator.childrenofsilence.item.KyotoKatanaItem;
@@ -79,7 +79,7 @@ public class ChildrenOfSilenceModItems {
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_BOOTS = REGISTRY.register("cowboy_coat_boots", () -> new CowboyCoatItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<Item> DRAKEN_STEEL_BALL = REGISTRY.register("draken_steel_ball", () -> new DrakenSteelBallItem());
 	public static final RegistryObject<Item> KYOTO_KATANA = REGISTRY.register("kyoto_katana", () -> new KyotoKatanaItem());
-	public static final RegistryObject<Item> RUIN_OF_HADES_SPEAR = REGISTRY.register("ruin_of_hades_spear", () -> new RuinOfHadesSpearItem());
+	public static final RegistryObject<Item> RUIN_OF_HADES_LANCE = REGISTRY.register("ruin_of_hades_lance", () -> new RuinOfHadesLanceItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

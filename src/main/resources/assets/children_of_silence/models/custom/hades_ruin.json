@@ -488,7 +488,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -644,7 +644,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -722,7 +722,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -800,7 +800,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -878,7 +878,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -956,7 +956,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1034,7 +1034,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1112,7 +1112,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1190,7 +1190,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1268,7 +1268,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1346,7 +1346,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1424,7 +1424,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1502,7 +1502,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1580,7 +1580,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1658,7 +1658,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1736,7 +1736,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1814,7 +1814,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1892,7 +1892,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -1970,7 +1970,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2048,7 +2048,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2126,7 +2126,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2204,7 +2204,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2282,7 +2282,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2360,7 +2360,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2438,7 +2438,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2516,7 +2516,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2594,7 +2594,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2672,7 +2672,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2750,7 +2750,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2828,7 +2828,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2906,7 +2906,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -2984,7 +2984,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -3062,7 +3062,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -3140,7 +3140,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -3530,7 +3530,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -3608,7 +3608,7 @@
       ],
       "rotation": {
         "angle": 0,
-        "axis": "z",
+        "axis": "y",
         "origin": [
           8,
           18,
@@ -6568,7 +6568,7 @@
       ],
       "translation": [
         -9.25,
-        8,
+        28,
         -6
       ],
       "scale": [
@@ -6585,7 +6585,7 @@
       ],
       "translation": [
         -9.25,
-        6.5,
+        28,
         -6
       ],
       "scale": [

@@ -78,7 +78,7 @@ public class ChildrenOfSilenceModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(ChildrenOfSilenceModItems.RUIN_OF_HADES_SPEAR.get());
+			tabData.accept(ChildrenOfSilenceModItems.RUIN_OF_HADES_LANCE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ChildrenOfSilenceModItems.LICH_OF_THE_DARKNESS_SPAWN_EGG.get());
 			tabData.accept(ChildrenOfSilenceModItems.PENGUIN_SPAWN_EGG.get());
