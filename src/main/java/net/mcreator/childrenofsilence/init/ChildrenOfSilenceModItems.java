@@ -21,6 +21,7 @@ import net.mcreator.childrenofsilence.item.SlayerDaggerItem;
 import net.mcreator.childrenofsilence.item.SeaTransformationSpriteItem;
 import net.mcreator.childrenofsilence.item.RefinedManShardItem;
 import net.mcreator.childrenofsilence.item.ManaShardItem;
+import net.mcreator.childrenofsilence.item.KyotoKatanaItem;
 import net.mcreator.childrenofsilence.item.IllusionWalkerItem;
 import net.mcreator.childrenofsilence.item.HayateTabSpriteItem;
 import net.mcreator.childrenofsilence.item.HayateRustedKatanaItem;
@@ -76,6 +77,7 @@ public class ChildrenOfSilenceModItems {
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_LEGGINGS = REGISTRY.register("cowboy_coat_leggings", () -> new CowboyCoatItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<CowboyCoatItem> COWBOY_COAT_BOOTS = REGISTRY.register("cowboy_coat_boots", () -> new CowboyCoatItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<Item> DRAKEN_STEEL_BALL = REGISTRY.register("draken_steel_ball", () -> new DrakenSteelBallItem());
+	public static final RegistryObject<Item> KYOTO_KATANA = REGISTRY.register("kyoto_katana", () -> new KyotoKatanaItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -79,6 +79,8 @@ public class ChildrenOfSilenceModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ChildrenOfSilenceModItems.LICH_OF_THE_DARKNESS_SPAWN_EGG.get());
 			tabData.accept(ChildrenOfSilenceModItems.PENGUIN_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(ChildrenOfSilenceModItems.KYOTO_KATANA.get());
 		}
 	}
 }

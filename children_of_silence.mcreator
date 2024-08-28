@@ -3049,6 +3049,51 @@
         ]
       },
       "path": "~/Draken/Weapons/Procedures"
+    },
+    {
+      "name": "KyotoKatana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kyoto_katana",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/kyoto_katana.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/KyotoKatanaItem.java"
+        ]
+      },
+      "path": "~/Hayate/Weapons"
+    },
+    {
+      "name": "KyotoKatanaThunder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kyoto_katana_thunder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KyotoKatanaThunderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Hayate/Procedures"
     }
   ],
   "variable_elements": [
@@ -3278,6 +3323,9 @@
       "~CUSTOM:DeepslateManaShardOre",
       "~CUSTOM:ManaShardOre"
     ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:KyotoKatana"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:HayateRustedKatana",
       "~CUSTOM:DrakenRapier",
@@ -3295,8 +3343,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
@@ -3309,6 +3357,7 @@
       "item.children_of_silence.fire_ball_sprite": "Fire Ball",
       "entity.children_of_silence.penguin": "Penguin",
       "item.children_of_silence.illusion_walker_leggings": "Illusion Walker Leggings",
+      "item.children_of_silence.kyoto_katana": "Kyoto Katana",
       "key.children_of_silence.previous_spell": "Previous Spell",
       "item.children_of_silence.refined_man_shard": "Refined Mana Shard",
       "gui.children_of_silence.stats_gui.button_reset": "Reset",
