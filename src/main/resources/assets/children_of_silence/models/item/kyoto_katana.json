@@ -1,6 +1,6 @@
 {
-  "parent": "item/handheld",
+  "parent": "children_of_silence:displaysettings/kusanagi.item",
   "textures": {
-    "layer0": "children_of_silence:item/debug_stick"
+    "layer0": "children_of_silence:item/kusanagi"
   }
 }
