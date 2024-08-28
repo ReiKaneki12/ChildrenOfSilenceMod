@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.childrenofsilence.procedures.KyotoKatanaThunderProcedure;
+import net.mcreator.childrenofsilence.procedures.KusanagiThunderProcedure;
 
 public class KyotoKatanaItem extends SwordItem {
 	public KyotoKatanaItem() {
@@ -42,7 +42,7 @@ public class KyotoKatanaItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		KyotoKatanaThunderProcedure.execute(entity.level(), entity, sourceentity);
+		KusanagiThunderProcedure.execute(entity.level(), entity, sourceentity);
 		return retval;
 	}
 }
