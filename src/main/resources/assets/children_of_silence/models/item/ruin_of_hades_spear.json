@@ -1,0 +1,7 @@
+{
+  "parent": "children_of_silence:custom/hades_ruin",
+  "textures": {
+    "1": "children_of_silence:block/hades_ruin",
+    "particle": "children_of_silence:item/hades_ruin"
+  }
+}

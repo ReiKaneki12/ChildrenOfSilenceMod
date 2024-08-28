@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "hades_ruin"
+      },
+      "name": "default"
+    }
+  }
+}
