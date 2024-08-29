@@ -3115,13 +3115,13 @@
       "registry_name": "esck_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/children_of_silence/models/item/esck_armor_leggings.json",
-          "src/main/resources/assets/children_of_silence/models/item/esck_armor_boots.json",
-          "src/main/java/net/mcreator/childrenofsilence/client/renderer/EsckArmorArmorRenderer.java",
-          "src/main/resources/assets/children_of_silence/models/item/esck_armor_helmet.json",
-          "src/main/resources/assets/children_of_silence/models/item/esck_armor_chestplate.json",
           "src/main/java/net/mcreator/childrenofsilence/item/EsckArmorItem.java",
-          "src/main/java/net/mcreator/childrenofsilence/item/model/EsckArmorModel.java"
+          "src/main/resources/assets/children_of_silence/models/item/esck_armor_helmet.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/model/EsckArmorModel.java",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/EsckArmorArmorRenderer.java",
+          "src/main/resources/assets/children_of_silence/models/item/esck_armor_boots.json",
+          "src/main/resources/assets/children_of_silence/models/item/esck_armor_leggings.json",
+          "src/main/resources/assets/children_of_silence/models/item/esck_armor_chestplate.json"
         ]
       },
       "path": "~/Esck/Armor"
@@ -3372,8 +3372,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
