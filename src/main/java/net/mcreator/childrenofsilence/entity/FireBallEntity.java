@@ -83,7 +83,7 @@ public class FireBallEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		WhileFireBallIsFlyingProcedure.execute(this);
+		WhileFireBallIsFlyingProcedure.execute(this.level(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}

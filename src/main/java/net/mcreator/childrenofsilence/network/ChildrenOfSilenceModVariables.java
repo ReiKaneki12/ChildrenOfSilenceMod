@@ -181,6 +181,7 @@ public class ChildrenOfSilenceModVariables {
 		public static final String DATA_NAME = "children_of_silence_mapvars";
 		public String PlayerImmuneSlash = "\"\"";
 		public boolean assss = true;
+		public boolean WorldJustLoaded = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -191,12 +192,14 @@ public class ChildrenOfSilenceModVariables {
 		public void read(CompoundTag nbt) {
 			PlayerImmuneSlash = nbt.getString("PlayerImmuneSlash");
 			assss = nbt.getBoolean("assss");
+			WorldJustLoaded = nbt.getBoolean("WorldJustLoaded");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putString("PlayerImmuneSlash", PlayerImmuneSlash);
 			nbt.putBoolean("assss", assss);
+			nbt.putBoolean("WorldJustLoaded", WorldJustLoaded);
 			return nbt;
 		}
 

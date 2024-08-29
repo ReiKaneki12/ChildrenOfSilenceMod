@@ -5,12 +5,10 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.childrenofsilence.network.ChildrenOfSilenceModVariables;
 
-public class WhileFireBallIsFlyingProcedure {
-	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity) {
-		if (entity == null || immediatesourceentity == null)
+public class DespawnFireBallProcedure {
+	public static void execute(LevelAccessor world, Entity entity) {
+		if (entity == null)
 			return;
-		assert Boolean.TRUE; //#dbg:WhileFireBallIsFlying:NoGravity
-		immediatesourceentity.setNoGravity(true);
 		if (ChildrenOfSilenceModVariables.MapVariables.get(world).WorldJustLoaded) {
 			if (!entity.level().isClientSide())
 				entity.discard();
