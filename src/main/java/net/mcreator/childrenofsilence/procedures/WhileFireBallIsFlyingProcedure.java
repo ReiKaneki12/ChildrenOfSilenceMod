@@ -9,11 +9,12 @@ public class WhileFireBallIsFlyingProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		assert Boolean.TRUE; //#dbg:WhileFireBallIsFlying:NoGravity
-		immediatesourceentity.setNoGravity(true);
 		if (ChildrenOfSilenceModVariables.MapVariables.get(world).WorldJustLoaded) {
 			if (!entity.level().isClientSide())
 				entity.discard();
+		} else if (!ChildrenOfSilenceModVariables.MapVariables.get(world).WorldJustLoaded) {
+			immediatesourceentity.setNoGravity(true);
+			assert Boolean.TRUE; //#dbg:WhileFireBallIsFlying:NoGravity
 		}
 	}
 }
