@@ -79,6 +79,10 @@ public class ChildrenOfSilenceModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ChildrenOfSilenceModItems.RUIN_OF_HADES_LANCE.get());
+			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_HELMET.get());
+			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_CHESTPLATE.get());
+			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_LEGGINGS.get());
+			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ChildrenOfSilenceModItems.LICH_OF_THE_DARKNESS_SPAWN_EGG.get());
 			tabData.accept(ChildrenOfSilenceModItems.PENGUIN_SPAWN_EGG.get());

@@ -29,6 +29,7 @@ import net.mcreator.childrenofsilence.item.HayateRustedKatanaItem;
 import net.mcreator.childrenofsilence.item.HayateKatanaItem;
 import net.mcreator.childrenofsilence.item.HayateClaymoreItem;
 import net.mcreator.childrenofsilence.item.FireBallSpriteItem;
+import net.mcreator.childrenofsilence.item.EsckArmorItem;
 import net.mcreator.childrenofsilence.item.ElvenNekclaceItem;
 import net.mcreator.childrenofsilence.item.DrakenTabSpriteItem;
 import net.mcreator.childrenofsilence.item.DrakenSteelBallItem;
@@ -80,6 +81,10 @@ public class ChildrenOfSilenceModItems {
 	public static final RegistryObject<Item> DRAKEN_STEEL_BALL = REGISTRY.register("draken_steel_ball", () -> new DrakenSteelBallItem());
 	public static final RegistryObject<Item> KYOTO_KATANA = REGISTRY.register("kyoto_katana", () -> new KyotoKatanaItem());
 	public static final RegistryObject<Item> RUIN_OF_HADES_LANCE = REGISTRY.register("ruin_of_hades_lance", () -> new RuinOfHadesLanceItem());
+	public static final RegistryObject<EsckArmorItem> ESCK_ARMOR_HELMET = REGISTRY.register("esck_armor_helmet", () -> new EsckArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<EsckArmorItem> ESCK_ARMOR_CHESTPLATE = REGISTRY.register("esck_armor_chestplate", () -> new EsckArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<EsckArmorItem> ESCK_ARMOR_LEGGINGS = REGISTRY.register("esck_armor_leggings", () -> new EsckArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<EsckArmorItem> ESCK_ARMOR_BOOTS = REGISTRY.register("esck_armor_boots", () -> new EsckArmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
