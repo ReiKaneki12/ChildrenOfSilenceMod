@@ -3135,29 +3135,6 @@
       "path": "~/Esck/Armor"
     },
     {
-      "name": "DespawnFireBall",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "despawn_fire_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/childrenofsilence/procedures/DespawnFireBallProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
-    },
-    {
       "name": "WorldJustLoadedSetup",
       "type": "procedure",
       "compiles": true,
@@ -3451,8 +3428,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
