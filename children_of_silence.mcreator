@@ -1601,51 +1601,6 @@
       "path": "~/Commands/SetSpell"
     },
     {
-      "name": "FireBallProjectile",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_ball_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/childrenofsilence/client/renderer/FireBallProjectileRenderer.java",
-          "src/main/java/net/mcreator/childrenofsilence/entity/FireBallProjectileEntity.java"
-        ]
-      },
-      "path": "~/Magic System/Entities/Projectiles"
-    },
-    {
-      "name": "FireBallSpawnParticles",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_ball_spawn_particles",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/childrenofsilence/procedures/FireBallSpawnParticlesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Magic System/Spells/ID 2 - Fire Ball/Procedures"
-    },
-    {
       "name": "DrakenRapier",
       "type": "tool",
       "compiles": true,
@@ -1783,10 +1738,6 @@
           "src/main/java/net/mcreator/childrenofsilence/procedures/WhileFireBallIsFlyingProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "immediatesourceentity",
             "type": "entity"
@@ -3428,12 +3379,11 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "effect.children_of_silence.mana_sickness": "Mana Sickness",
+      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
-      "entity.children_of_silence.fire_ball_projectile": "Fire Ball",
       "item.children_of_silence.esck_armor_leggings": "Demon Prince Leggings",
       "gui.children_of_silence.stats_gui.label_stat_points": "Stat Points: ",
       "gui.children_of_silence.mana_overlay.label_empty": "/",
@@ -3720,12 +3670,7 @@
           },
           {
             "name": "Entities",
-            "children": [
-              {
-                "name": "Projectiles",
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       },

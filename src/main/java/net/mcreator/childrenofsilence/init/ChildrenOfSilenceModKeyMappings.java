@@ -51,7 +51,7 @@ public class ChildrenOfSilenceModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping NEXT_SPELL = new KeyMapping("key.children_of_silence.next_spell", GLFW.GLFW_KEY_RIGHT, "key.categories.misc") {
+	public static final KeyMapping NEXT_SPELL = new KeyMapping("key.children_of_silence.next_spell", GLFW.GLFW_KEY_DOWN, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -64,7 +64,7 @@ public class ChildrenOfSilenceModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping PREVIOUS_SPELL = new KeyMapping("key.children_of_silence.previous_spell", GLFW.GLFW_KEY_LEFT, "key.categories.misc") {
+	public static final KeyMapping PREVIOUS_SPELL = new KeyMapping("key.children_of_silence.previous_spell", GLFW.GLFW_KEY_UP, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override

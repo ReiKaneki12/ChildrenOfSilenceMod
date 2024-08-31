@@ -18,7 +18,6 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.childrenofsilence.entity.PenguinEntity;
 import net.mcreator.childrenofsilence.entity.LichOfTheDarknessEntity;
-import net.mcreator.childrenofsilence.entity.FireBallProjectileEntity;
 import net.mcreator.childrenofsilence.entity.FireBallEntity;
 import net.mcreator.childrenofsilence.entity.DrakenSteelBallProjectileEntity;
 import net.mcreator.childrenofsilence.ChildrenOfSilenceMod;
@@ -26,8 +25,6 @@ import net.mcreator.childrenofsilence.ChildrenOfSilenceMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ChildrenOfSilenceModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ChildrenOfSilenceMod.MODID);
-	public static final RegistryObject<EntityType<FireBallProjectileEntity>> FIRE_BALL_PROJECTILE = register("fire_ball_projectile", EntityType.Builder.<FireBallProjectileEntity>of(FireBallProjectileEntity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireBallProjectileEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<FireBallEntity>> FIRE_BALL = register("fire_ball",
 			EntityType.Builder.<FireBallEntity>of(FireBallEntity::new, MobCategory.MISC).setCustomClientFactory(FireBallEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<LichOfTheDarknessEntity>> LICH_OF_THE_DARKNESS = register("lich_of_the_darkness",
@@ -49,7 +46,6 @@ public class ChildrenOfSilenceModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			FireBallProjectileEntity.init();
 			LichOfTheDarknessEntity.init();
 			PenguinEntity.init();
 		});
@@ -57,7 +53,6 @@ public class ChildrenOfSilenceModEntities {
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(FIRE_BALL_PROJECTILE.get(), FireBallProjectileEntity.createAttributes().build());
 		event.put(LICH_OF_THE_DARKNESS.get(), LichOfTheDarknessEntity.createAttributes().build());
 		event.put(PENGUIN.get(), PenguinEntity.createAttributes().build());
 	}
