@@ -31,6 +31,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.HumanoidModel;
 
+import net.mcreator.childrenofsilence.procedures.EsckArmorOnVariableProcedure;
 import net.mcreator.childrenofsilence.client.renderer.EsckArmorArmorRenderer;
 
 import java.util.function.Consumer;
@@ -106,6 +107,8 @@ public class EsckArmorItem extends ArmorItem implements GeoItem {
 
 	@Override
 	public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
+		if (itemstack.getItem() instanceof EsckArmorItem armor && armor.getType() == ArmorItem.Type.CHESTPLATE)
+			EsckArmorOnVariableProcedure.execute(entity);
 	}
 
 	private PlayState predicate(AnimationState event) {

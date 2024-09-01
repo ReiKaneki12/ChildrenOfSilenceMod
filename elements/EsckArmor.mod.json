@@ -10,6 +10,9 @@
     "textureLeggings": "ilussionwalker_leggings",
     "enableBoots": true,
     "textureBoots": "ilussionwalker_boots",
+    "onBodyTick": {
+      "name": "EsckArmorOnVariable"
+    },
     "creativeTabs": [
       {
         "value": "COMBAT"

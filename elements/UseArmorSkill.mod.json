@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Use Armor Skill",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KeyX"
+    }
+  }
+}

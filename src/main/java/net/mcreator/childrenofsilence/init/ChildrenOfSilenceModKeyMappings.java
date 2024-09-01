@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.childrenofsilence.network.UseSpellKeyMessage;
+import net.mcreator.childrenofsilence.network.UseArmorSkillMessage;
 import net.mcreator.childrenofsilence.network.ToggleRunModeMessage;
 import net.mcreator.childrenofsilence.network.StatsMenuMessage;
 import net.mcreator.childrenofsilence.network.SpellMenuMessage;
@@ -103,6 +104,19 @@ public class ChildrenOfSilenceModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping USE_ARMOR_SKILL = new KeyMapping("key.children_of_silence.use_armor_skill", GLFW.GLFW_KEY_X, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ChildrenOfSilenceMod.PACKET_HANDLER.sendToServer(new UseArmorSkillMessage(0, 0));
+				UseArmorSkillMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -112,6 +126,7 @@ public class ChildrenOfSilenceModKeyMappings {
 		event.register(PREVIOUS_SPELL);
 		event.register(STATS_MENU);
 		event.register(TOGGLE_RUN_MODE);
+		event.register(USE_ARMOR_SKILL);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -125,6 +140,7 @@ public class ChildrenOfSilenceModKeyMappings {
 				PREVIOUS_SPELL.consumeClick();
 				STATS_MENU.consumeClick();
 				TOGGLE_RUN_MODE.consumeClick();
+				USE_ARMOR_SKILL.consumeClick();
 			}
 		}
 	}

@@ -3126,6 +3126,95 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "EsckArmorOnVariable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_armor_on_variable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckArmorOnVariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Esck/Procedures"
+    },
+    {
+      "name": "UseArmorSkill",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_armor_skill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/network/UseArmorSkillMessage.java"
+        ]
+      },
+      "path": "~/Keys"
+    },
+    {
+      "name": "KeyX",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "key_x",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/KeyXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keys/Keys Procedures"
+    },
+    {
+      "name": "UseArmorSkillProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_armor_skill_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/UseArmorSkillProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills/Procedures"
+    },
+    {
+      "name": "EsckDemonMode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_demon_mode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonModeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Esck/Procedures"
     }
   ],
   "variable_elements": [
@@ -3326,6 +3415,18 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "EsckArmorOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isDemon",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3379,8 +3480,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
@@ -3400,6 +3501,7 @@
       "gui.children_of_silence.stats_gui.button_reset": "Reset",
       "item.children_of_silence.draken_tab_sprite": "Draken Tab Sprite",
       "item_group.children_of_silence.magic_blocks": "Magic Blocks",
+      "key.children_of_silence.use_armor_skill": "Use Armor Skill",
       "item.children_of_silence.check_spells_slot_debug": "Check Spells Slot Debug",
       "item.children_of_silence.esck_armor_helmet": "Demon Prince Helmet",
       "block.children_of_silence.deepslate_mana_shard_ore": "Deepslate Mana Shard Ore",
@@ -3918,6 +4020,19 @@
         "children": [
           {
             "name": "Armor",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Skills",
+        "children": [
+          {
+            "name": "Procedures",
             "children": []
           }
         ]

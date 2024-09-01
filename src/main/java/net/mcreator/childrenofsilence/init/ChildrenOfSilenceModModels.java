@@ -17,6 +17,7 @@ import net.mcreator.childrenofsilence.client.model.Modelslayer_chestplate;
 import net.mcreator.childrenofsilence.client.model.Modelpenguin_normal_model;
 import net.mcreator.childrenofsilence.client.model.Modelhorizontal_slash;
 import net.mcreator.childrenofsilence.client.model.Modelfire_ball;
+import net.mcreator.childrenofsilence.client.model.Modelesck_demon_placeholder_normal_model;
 import net.mcreator.childrenofsilence.client.model.Modelaxolotl;
 import net.mcreator.childrenofsilence.client.model.ModelElvenNecklace;
 
@@ -25,6 +26,7 @@ public class ChildrenOfSilenceModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelElvenNecklace.LAYER_LOCATION, ModelElvenNecklace::createBodyLayer);
+		event.registerLayerDefinition(Modelesck_demon_placeholder_normal_model.LAYER_LOCATION, Modelesck_demon_placeholder_normal_model::createBodyLayer);
 		event.registerLayerDefinition(Modelaxolotl.LAYER_LOCATION, Modelaxolotl::createBodyLayer);
 		event.registerLayerDefinition(Modelslayer_leggings.LAYER_LOCATION, Modelslayer_leggings::createBodyLayer);
 		event.registerLayerDefinition(Modelvertical_slash.LAYER_LOCATION, Modelvertical_slash::createBodyLayer);

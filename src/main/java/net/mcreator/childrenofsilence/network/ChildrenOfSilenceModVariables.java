@@ -112,6 +112,8 @@ public class ChildrenOfSilenceModVariables {
 			clone.StatInt = original.StatInt;
 			clone.isPenguin = original.isPenguin;
 			clone.isAxolotl = original.isAxolotl;
+			clone.EsckArmorOn = original.EsckArmorOn;
+			clone.isDemon = original.isDemon;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -322,6 +324,8 @@ public class ChildrenOfSilenceModVariables {
 		public double StatInt = 10.0;
 		public boolean isPenguin = false;
 		public boolean isAxolotl = false;
+		public boolean EsckArmorOn = false;
+		public boolean isDemon = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -360,6 +364,8 @@ public class ChildrenOfSilenceModVariables {
 			nbt.putDouble("StatInt", StatInt);
 			nbt.putBoolean("isPenguin", isPenguin);
 			nbt.putBoolean("isAxolotl", isAxolotl);
+			nbt.putBoolean("EsckArmorOn", EsckArmorOn);
+			nbt.putBoolean("isDemon", isDemon);
 			return nbt;
 		}
 
@@ -395,6 +401,8 @@ public class ChildrenOfSilenceModVariables {
 			StatInt = nbt.getDouble("StatInt");
 			isPenguin = nbt.getBoolean("isPenguin");
 			isAxolotl = nbt.getBoolean("isAxolotl");
+			EsckArmorOn = nbt.getBoolean("EsckArmorOn");
+			isDemon = nbt.getBoolean("isDemon");
 		}
 	}
 
@@ -458,6 +466,8 @@ public class ChildrenOfSilenceModVariables {
 					variables.StatInt = message.data.StatInt;
 					variables.isPenguin = message.data.isPenguin;
 					variables.isAxolotl = message.data.isAxolotl;
+					variables.EsckArmorOn = message.data.EsckArmorOn;
+					variables.isDemon = message.data.isDemon;
 				}
 			});
 			context.setPacketHandled(true);
