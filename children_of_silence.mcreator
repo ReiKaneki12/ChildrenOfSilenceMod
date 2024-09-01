@@ -3196,25 +3196,6 @@
         ]
       },
       "path": "~/Skills/Procedures"
-    },
-    {
-      "name": "EsckDemonMode",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "esck_demon_mode",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonModeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Esck/Procedures"
     }
   ],
   "variable_elements": [
