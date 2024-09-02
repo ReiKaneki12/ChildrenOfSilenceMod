@@ -114,6 +114,7 @@ public class ChildrenOfSilenceModVariables {
 			clone.isAxolotl = original.isAxolotl;
 			clone.EsckArmorOn = original.EsckArmorOn;
 			clone.isDemon = original.isDemon;
+			clone.DemonModeJustTurnOff = original.DemonModeJustTurnOff;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -326,6 +327,7 @@ public class ChildrenOfSilenceModVariables {
 		public boolean isAxolotl = false;
 		public boolean EsckArmorOn = false;
 		public boolean isDemon = false;
+		public boolean DemonModeJustTurnOff = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -366,6 +368,7 @@ public class ChildrenOfSilenceModVariables {
 			nbt.putBoolean("isAxolotl", isAxolotl);
 			nbt.putBoolean("EsckArmorOn", EsckArmorOn);
 			nbt.putBoolean("isDemon", isDemon);
+			nbt.putBoolean("DemonModeJustTurnOff", DemonModeJustTurnOff);
 			return nbt;
 		}
 
@@ -403,6 +406,7 @@ public class ChildrenOfSilenceModVariables {
 			isAxolotl = nbt.getBoolean("isAxolotl");
 			EsckArmorOn = nbt.getBoolean("EsckArmorOn");
 			isDemon = nbt.getBoolean("isDemon");
+			DemonModeJustTurnOff = nbt.getBoolean("DemonModeJustTurnOff");
 		}
 	}
 
@@ -468,6 +472,7 @@ public class ChildrenOfSilenceModVariables {
 					variables.isAxolotl = message.data.isAxolotl;
 					variables.EsckArmorOn = message.data.EsckArmorOn;
 					variables.isDemon = message.data.isDemon;
+					variables.DemonModeJustTurnOff = message.data.DemonModeJustTurnOff;
 				}
 			});
 			context.setPacketHandled(true);

@@ -31,16 +31,21 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.HumanoidModel;
 
-import net.mcreator.childrenofsilence.client.renderer.EsckArmorArmorRenderer;
+import net.mcreator.childrenofsilence.init.ChildrenOfSilenceModItems;
+import net.mcreator.childrenofsilence.client.renderer.EsckDemonArmorArmorRenderer;
 
 import java.util.function.Consumer;
+import java.util.Set;
 import java.util.List;
 
-public class EsckArmorItem extends ArmorItem implements GeoItem {
+import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+
+public class EsckDemonArmorItem extends ArmorItem implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
 
-	public EsckArmorItem(ArmorItem.Type type, Item.Properties properties) {
+	public EsckDemonArmorItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -69,7 +74,7 @@ public class EsckArmorItem extends ArmorItem implements GeoItem {
 
 			@Override
 			public String getName() {
-				return "esck_armor";
+				return "esck_demon_armor";
 			}
 
 			@Override
@@ -92,7 +97,7 @@ public class EsckArmorItem extends ArmorItem implements GeoItem {
 			@Override
 			public HumanoidModel<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
 				if (this.renderer == null)
-					this.renderer = new EsckArmorArmorRenderer();
+					this.renderer = new EsckDemonArmorArmorRenderer();
 				this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
 				return this.renderer;
 			}
@@ -115,7 +120,15 @@ public class EsckArmorItem extends ArmorItem implements GeoItem {
 			if (entity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
-			return PlayState.CONTINUE;
+			Set<Item> wornArmor = new ObjectOpenHashSet<>();
+			for (ItemStack stack : entity.getArmorSlots()) {
+				if (stack.isEmpty())
+					return PlayState.STOP;
+				wornArmor.add(stack.getItem());
+			}
+			boolean isWearingAll = wornArmor.containsAll(ObjectArrayList.of(ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_BOOTS.get(), ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_LEGGINGS.get(),
+					ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_CHESTPLATE.get(), ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_HELMET.get()));
+			return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
 		}
 		return PlayState.STOP;
 	}
@@ -135,7 +148,15 @@ public class EsckArmorItem extends ArmorItem implements GeoItem {
 			if (entity instanceof ArmorStand) {
 				return PlayState.CONTINUE;
 			}
-			return PlayState.CONTINUE;
+			Set<Item> wornArmor = new ObjectOpenHashSet<>();
+			for (ItemStack stack : entity.getArmorSlots()) {
+				if (stack.isEmpty())
+					return PlayState.STOP;
+				wornArmor.add(stack.getItem());
+			}
+			boolean isWearingAll = wornArmor.containsAll(ObjectArrayList.of(ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_BOOTS.get(), ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_LEGGINGS.get(),
+					ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_CHESTPLATE.get(), ChildrenOfSilenceModItems.ESCK_DEMON_ARMOR_HELMET.get()));
+			return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
 		} else if (animationprocedure.equals("empty")) {
 			prevAnim = "empty";
 			return PlayState.STOP;

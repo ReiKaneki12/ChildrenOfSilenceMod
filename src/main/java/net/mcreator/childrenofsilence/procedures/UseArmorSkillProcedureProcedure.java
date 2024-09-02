@@ -9,12 +9,23 @@ public class UseArmorSkillProcedureProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ChildrenOfSilenceModVariables.PlayerVariables())).EsckArmorOn) {
-			{
-				boolean _setval = !(entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ChildrenOfSilenceModVariables.PlayerVariables())).isDemon;
-				entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.isDemon = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+			if (!(entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ChildrenOfSilenceModVariables.PlayerVariables())).isDemon) {
+				{
+					boolean _setval = true;
+					entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.isDemon = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else {
+				{
+					boolean _setval = false;
+					entity.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.isDemon = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				DemonModeJustTurnOffProcedure.execute(entity);
 			}
 		}
 	}
