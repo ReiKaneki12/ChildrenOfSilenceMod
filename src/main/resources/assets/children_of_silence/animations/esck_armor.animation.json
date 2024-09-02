@@ -2,8 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"idle": {
-			"loop": true,
-			"anim_time_update": "0"
+			"loop": true
 		}
 	},
 	"geckolib_format_version": 2

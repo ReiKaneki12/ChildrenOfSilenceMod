@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "children_of_silence:item/ilussionwalker_helmet"
+    "layer0": "children_of_silence:item/demon_prince_helmet"
   }
 }
