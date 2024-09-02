@@ -3266,8 +3266,27 @@
         ],
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Esck/Procedures"
+    },
+    {
+      "name": "EsckDemonArmorRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_demon_armor_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonArmorRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -3543,8 +3562,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "effect.children_of_silence.mana_sickness": "Mana Sickness",
+      "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
