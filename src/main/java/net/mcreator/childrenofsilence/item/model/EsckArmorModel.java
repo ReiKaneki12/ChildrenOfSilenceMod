@@ -19,6 +19,6 @@ public class EsckArmorModel extends GeoModel<EsckArmorItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(EsckArmorItem object) {
-		return new ResourceLocation("children_of_silence", "textures/item/esck_armor_new.png");
+		return new ResourceLocation("children_of_silence", "textures/item/esck_armor.png");
 	}
 }

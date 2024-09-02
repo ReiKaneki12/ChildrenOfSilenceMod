@@ -15,7 +15,7 @@
         "value": "COMBAT"
       }
     ],
-    "armorTextureFile": "esck_armor_new.png",
+    "armorTextureFile": "esck_armor.png",
     "model": "esck_armor.geo.json",
     "idle": "idle",
     "head": "armorHead",
