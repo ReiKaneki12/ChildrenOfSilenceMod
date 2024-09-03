@@ -22,6 +22,7 @@ import net.mcreator.childrenofsilence.item.SeaTransformationSpriteItem;
 import net.mcreator.childrenofsilence.item.RuinOfHadesLanceItem;
 import net.mcreator.childrenofsilence.item.RefinedManShardItem;
 import net.mcreator.childrenofsilence.item.ManaShardItem;
+import net.mcreator.childrenofsilence.item.LanceOfLonginusItem;
 import net.mcreator.childrenofsilence.item.KyotoKatanaItem;
 import net.mcreator.childrenofsilence.item.IllusionWalkerItem;
 import net.mcreator.childrenofsilence.item.HayateTabSpriteItem;
@@ -92,6 +93,7 @@ public class ChildrenOfSilenceModItems {
 	public static final RegistryObject<EsckDemonArmorItem> ESCK_DEMON_ARMOR_LEGGINGS = REGISTRY.register("esck_demon_armor_leggings", () -> new EsckDemonArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<EsckDemonArmorItem> ESCK_DEMON_ARMOR_BOOTS = REGISTRY.register("esck_demon_armor_boots", () -> new EsckDemonArmorItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<Item> ESCK_TAB_SPRITE = REGISTRY.register("esck_tab_sprite", () -> new EsckTabSpriteItem());
+	public static final RegistryObject<Item> LANCE_OF_LONGINUS = REGISTRY.register("lance_of_longinus", () -> new LanceOfLonginusItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

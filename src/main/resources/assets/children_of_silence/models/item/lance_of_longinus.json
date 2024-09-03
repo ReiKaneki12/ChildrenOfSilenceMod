@@ -1,0 +1,6 @@
+{
+  "parent": "children_of_silence:displaysettings/longinus_spear.item",
+  "textures": {
+    "layer0": "children_of_silence:item/longinus_spear"
+  }
+}
