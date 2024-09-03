@@ -115,6 +115,7 @@ public class ChildrenOfSilenceModVariables {
 			clone.EsckArmorOn = original.EsckArmorOn;
 			clone.isDemon = original.isDemon;
 			clone.DemonModeJustTurnOff = original.DemonModeJustTurnOff;
+			clone.isFlyng = original.isFlyng;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -328,6 +329,7 @@ public class ChildrenOfSilenceModVariables {
 		public boolean EsckArmorOn = false;
 		public boolean isDemon = false;
 		public boolean DemonModeJustTurnOff = false;
+		public boolean isFlyng = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -369,6 +371,7 @@ public class ChildrenOfSilenceModVariables {
 			nbt.putBoolean("EsckArmorOn", EsckArmorOn);
 			nbt.putBoolean("isDemon", isDemon);
 			nbt.putBoolean("DemonModeJustTurnOff", DemonModeJustTurnOff);
+			nbt.putBoolean("isFlyng", isFlyng);
 			return nbt;
 		}
 
@@ -407,6 +410,7 @@ public class ChildrenOfSilenceModVariables {
 			EsckArmorOn = nbt.getBoolean("EsckArmorOn");
 			isDemon = nbt.getBoolean("isDemon");
 			DemonModeJustTurnOff = nbt.getBoolean("DemonModeJustTurnOff");
+			isFlyng = nbt.getBoolean("isFlyng");
 		}
 	}
 
@@ -473,6 +477,7 @@ public class ChildrenOfSilenceModVariables {
 					variables.EsckArmorOn = message.data.EsckArmorOn;
 					variables.isDemon = message.data.isDemon;
 					variables.DemonModeJustTurnOff = message.data.DemonModeJustTurnOff;
+					variables.isFlyng = message.data.isFlyng;
 				}
 			});
 			context.setPacketHandled(true);

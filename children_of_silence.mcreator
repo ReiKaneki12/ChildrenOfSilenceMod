@@ -3201,17 +3201,17 @@
       "name": "EsckDemonArmor",
       "type": "animatedarmor",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "esck_demon_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_boots.json",
-          "src/main/java/net/mcreator/childrenofsilence/item/model/EsckDemonArmorModel.java",
-          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_helmet.json",
-          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_chestplate.json",
           "src/main/java/net/mcreator/childrenofsilence/item/EsckDemonArmorItem.java",
           "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_leggings.json",
-          "src/main/java/net/mcreator/childrenofsilence/client/renderer/EsckDemonArmorArmorRenderer.java"
+          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_chestplate.json",
+          "src/main/java/net/mcreator/childrenofsilence/client/renderer/EsckDemonArmorArmorRenderer.java",
+          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_helmet.json",
+          "src/main/resources/assets/children_of_silence/models/item/esck_demon_armor_boots.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/model/EsckDemonArmorModel.java"
         ]
       },
       "path": "~/Esck/Armor"
@@ -3282,6 +3282,92 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonArmorRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Esck/Procedures"
+    },
+    {
+      "name": "EsckDemonArmorFlyAnimation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_demon_armor_fly_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonArmorFlyAnimationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Esck/Procedures"
+    },
+    {
+      "name": "PlayerIiFlyngVariable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_ii_flyng_variable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/PlayerIiFlyngVariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "EsckTabSprite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_tab_sprite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/children_of_silence/models/item/esck_tab_sprite.json",
+          "src/main/java/net/mcreator/childrenofsilence/item/EsckTabSpriteItem.java"
+        ]
+      },
+      "path": "~/Criative Tab/Esck"
+    },
+    {
+      "name": "EsckTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Criative Tab/Esck"
+    },
+    {
+      "name": "EsckDemonModeFlying",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esck_demon_mode_flying",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/childrenofsilence/procedures/EsckDemonModeFlyingProcedure.java"
         ],
         "dependencies": [
           {
@@ -3509,6 +3595,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "isFlyng",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3562,8 +3654,8 @@
       "item_group.children_of_silence.draken_tab": "Draken Tab",
       "item.children_of_silence.angle_checker": "Angle Checker",
       "gui.children_of_silence.stats_gui.label_dex": "Dex:",
-      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "item.children_of_silence.cowboy_coat_helmet": "Cowboy Coat Helmet",
+      "effect.children_of_silence.mana_sickness": "Mana Sickness",
       "block.children_of_silence.elven_coffin": "Elven Coffin",
       "death.attack.holy": "%1$s was purified",
       "block.children_of_silence.elven_coffin_no_sword": "Elven Coffin",
@@ -3623,7 +3715,9 @@
       "item.children_of_silence.illusion_walker_boots": "Illusion Walker Boots",
       "block.children_of_silence.mana_shard_block": "Mana Shard Block",
       "item.children_of_silence.elven_nekclace": "Elven Nekclace",
+      "item.children_of_silence.esck_tab_sprite": "Esck Tab Sprite",
       "block.children_of_silence.mana_shard_ore": "Mana Shard Ore",
+      "item_group.children_of_silence.esck_tab": "Esck",
       "gui.children_of_silence.stats_gui.label_con": "Con:",
       "item_group.children_of_silence.debug": "Debug",
       "enchantment.children_of_silence.blessed": "Blessed",
@@ -3888,6 +3982,10 @@
           },
           {
             "name": "Draken",
+            "children": []
+          },
+          {
+            "name": "Esck",
             "children": []
           }
         ]

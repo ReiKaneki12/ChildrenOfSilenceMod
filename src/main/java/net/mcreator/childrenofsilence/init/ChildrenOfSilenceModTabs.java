@@ -38,6 +38,13 @@ public class ChildrenOfSilenceModTabs {
 				tabData.accept(ChildrenOfSilenceModBlocks.DEEPSLATE_MANA_SHARD_ORE.get().asItem());
 				tabData.accept(ChildrenOfSilenceModBlocks.MANA_SHARD_BLOCK.get().asItem());
 			}).withSearchBar().build());
+	public static final RegistryObject<CreativeModeTab> ESCK_TAB = REGISTRY.register("esck_tab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.children_of_silence.esck_tab")).icon(() -> new ItemStack(ChildrenOfSilenceModItems.ESCK_TAB_SPRITE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_HELMET.get());
+				tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_CHESTPLATE.get());
+				tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_LEGGINGS.get());
+				tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_BOOTS.get());
+			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> MAGIC = REGISTRY.register("magic",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.children_of_silence.magic")).icon(() -> new ItemStack(ChildrenOfSilenceModItems.REFINED_MAN_SHARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ChildrenOfSilenceModItems.MANA_SHARD.get());
@@ -79,10 +86,6 @@ public class ChildrenOfSilenceModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ChildrenOfSilenceModItems.RUIN_OF_HADES_LANCE.get());
-			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_HELMET.get());
-			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_CHESTPLATE.get());
-			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_LEGGINGS.get());
-			tabData.accept(ChildrenOfSilenceModItems.ESCK_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ChildrenOfSilenceModItems.LICH_OF_THE_DARKNESS_SPAWN_EGG.get());
 			tabData.accept(ChildrenOfSilenceModItems.PENGUIN_SPAWN_EGG.get());

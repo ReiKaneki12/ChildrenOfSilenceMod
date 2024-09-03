@@ -31,6 +31,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.HumanoidModel;
 
+import net.mcreator.childrenofsilence.network.ChildrenOfSilenceModVariables;
 import net.mcreator.childrenofsilence.init.ChildrenOfSilenceModItems;
 import net.mcreator.childrenofsilence.client.renderer.EsckDemonArmorArmorRenderer;
 
@@ -115,7 +116,12 @@ public class EsckDemonArmorItem extends ArmorItem implements GeoItem {
 
 	private PlayState predicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			event.getController().setAnimation(RawAnimation.begin().thenLoop("idle"));
+			Entity player1 = (Entity) event.getData(DataTickets.ENTITY);
+			if ((player1.getCapability(ChildrenOfSilenceModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ChildrenOfSilenceModVariables.PlayerVariables())).isFlyng){
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("fly"));
+			}else{
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("idle"));
+			}
 			Entity entity = (Entity) event.getData(DataTickets.ENTITY);
 			if (entity instanceof ArmorStand) {
 				return PlayState.CONTINUE;

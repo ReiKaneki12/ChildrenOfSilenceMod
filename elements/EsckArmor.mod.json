@@ -12,7 +12,7 @@
     "textureBoots": "demon_prince_boots",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:EsckTab"
       }
     ],
     "armorTextureFile": "esck_armor.png",
